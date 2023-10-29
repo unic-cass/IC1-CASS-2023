@@ -7,38 +7,6 @@ MACRO wb_buttons_leds
   FOREIGN wb_buttons_leds ;
   ORIGIN 0.000 0.000 ;
   SIZE 434.190 BY 444.910 ;
-  PIN VGND
-    DIRECTION INOUT ;
-    USE GROUND ;
-    PORT
-      LAYER met4 ;
-        RECT 88.520 10.640 90.120 432.720 ;
-    END
-    PORT
-      LAYER met4 ;
-        RECT 242.120 10.640 243.720 432.720 ;
-    END
-    PORT
-      LAYER met4 ;
-        RECT 395.720 10.640 397.320 432.720 ;
-    END
-  END VGND
-  PIN VPWR
-    DIRECTION INOUT ;
-    USE POWER ;
-    PORT
-      LAYER met4 ;
-        RECT 11.720 10.640 13.320 432.720 ;
-    END
-    PORT
-      LAYER met4 ;
-        RECT 165.320 10.640 166.920 432.720 ;
-    END
-    PORT
-      LAYER met4 ;
-        RECT 318.920 10.640 320.520 432.720 ;
-    END
-  END VPWR
   PIN buttons
     DIRECTION INPUT ;
     USE SIGNAL ;
@@ -1178,6 +1146,38 @@ MACRO wb_buttons_leds
         RECT 24.470 440.910 24.750 444.910 ;
     END
   END reset
+  PIN vccd1
+    DIRECTION INOUT ;
+    USE POWER ;
+    PORT
+      LAYER met4 ;
+        RECT 11.720 10.640 13.320 432.720 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 165.320 10.640 166.920 432.720 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 318.920 10.640 320.520 432.720 ;
+    END
+  END vccd1
+  PIN vssd1
+    DIRECTION INOUT ;
+    USE GROUND ;
+    PORT
+      LAYER met4 ;
+        RECT 88.520 10.640 90.120 432.720 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 242.120 10.640 243.720 432.720 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 395.720 10.640 397.320 432.720 ;
+    END
+  END vssd1
   OBS
       LAYER li1 ;
         RECT 5.520 10.795 428.260 432.565 ;

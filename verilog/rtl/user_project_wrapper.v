@@ -79,44 +79,84 @@ module user_project_wrapper #(
 );
 
 /*--------------------------------------*/
-/* User project is instantiated  here   */
+/* EGD TOP                              */
 /*--------------------------------------*/
 
-user_proj_example mprj (
+egd_top_wrapper egd_top_wrapper (
 `ifdef USE_POWER_PINS
 	.vccd1(vccd1),	// User area 1 1.8V power
 	.vssd1(vssd1),	// User area 1 digital ground
 `endif
 
+    // Wishbone Slave ports
     .wb_clk_i(wb_clk_i),
-    .wb_rst_i(wb_rst_i),
 
-    // MGMT SoC Wishbone Slave
-
-    .wbs_cyc_i(wbs_cyc_i),
-    .wbs_stb_i(wbs_stb_i),
-    .wbs_we_i(wbs_we_i),
-    .wbs_sel_i(wbs_sel_i),
-    .wbs_adr_i(wbs_adr_i),
-    .wbs_dat_i(wbs_dat_i),
-    .wbs_ack_o(wbs_ack_o),
-    .wbs_dat_o(wbs_dat_o),
-
-    // Logic Analyzer
-
-    .la_data_in(la_data_in),
-    .la_data_out(la_data_out),
-    .la_oenb (la_oenb),
-
-    // IO Pads
-
-    .io_in ({io_in[37:30],io_in[7:0]}),
-    .io_out({io_out[37:30],io_out[7:0]}),
-    .io_oeb({io_oeb[37:30],io_oeb[7:0]}),
-
-    // IRQ
-    .irq(user_irq)
+    // LA Signals
+    // Inputs to egd_top_wrapper
+    .la_data_in_65(la_data_in[65]),
+    .la_data_in_58_43(la_data_in[58:43]),
+    .la_data_in_60_59(la_data_in[60:59]),
+    // Outputs to egd_top_wrapper
+    .la_data_out_23_16(la_data_out[23:16]),
+    .la_data_out_26_24(la_data_out[26:24]),
+    .la_data_out_30_27(la_data_out[30:27])
 );
+
+
+/*--------------------------------------*/
+/* R4 Butterfly                         */
+/*--------------------------------------*/
+
+R4_butter R4_butter(
+`ifdef USE_POWER_PINS
+	.vccd1(vccd1),	// User area 1 1.8V power
+	.vssd1(vssd1),	// User area 1 digital ground
+`endif
+    
+    .xr0(la_data_in[11:8]),
+    .xr1(la_data_in[15:12]),
+    .xr2(la_data_in[19:16]),
+    .xr3(la_data_in[23:20]),
+    .xi0(la_data_in[27:24]),
+    .xi1(la_data_in[31:28]),
+    .xi2(la_data_in[35:32]),
+    .xi3(la_data_in[39:36]),
+    .c1(la_data_in[40]),
+    .c2(la_data_in[41]),
+    .c3(la_data_in[42]),
+    .Xro(la_data_out[11:8]),
+    .Xio(la_data_out[15:12]),
+    .la_oenb(la_oenb[15:8])
+
+);
+
+/*--------------------------------------*/
+/* ALU32                                */
+/*--------------------------------------*/
+
+wb_buttons_leds wb_buttons_leds(
+`ifdef USE_POWER_PINS
+    .vccd1(vccd1),
+    .vssd1(vssd1),
+`endif
+    .clk(wb_clk_i),
+    .reset(wb_rst_i),
+
+    // wb interface
+    .i_wb_cyc(wbs_cyc_i),       // wishbone transaction
+    .i_wb_stb(wbs_stb_i),       // strobe - data valid and accepted as long as !o_wb_stall
+    .i_wb_we(wbs_we_i),        // write enable
+    .i_wb_addr(wbs_adr_i),      // address
+    .i_wb_data(wbs_dat_i),      // incoming data
+    .o_wb_ack(wbs_ack_o),       // request is completed 
+    .o_wb_data(wbs_dat_o),      // output data
+
+    // buttons
+    .buttons(io_in[7]),
+    .leds(io_out[13:10]),
+    .led_enb(io_oeb[17:10])
+
+    ); 
 
 endmodule	// user_project_wrapper
 

@@ -9,8 +9,8 @@
     "CLOCK_PORT": "wb_clk_i",
     "CLOCK_NET": "mprj.clk",
     "FP_PDN_MACRO_HOOKS": [
-        "egd_top_wrapper vccd1 vssd1 vccd1 vssd1",
-        "R4_butter vccd1 vssd1 vccd1 vssd1",
+        "egd_top_wrapper vccd1 vssd1 vccd1 vssd1,",
+        "R4_butter       vccd1 vssd1 vccd1 vssd1,",
         "wb_buttons_leds vccd1 vssd1 vccd1 vssd1"],
     "MACRO_PLACEMENT_CFG": "dir::macro.cfg",
     "MAGIC_DEF_LABELS": 0,

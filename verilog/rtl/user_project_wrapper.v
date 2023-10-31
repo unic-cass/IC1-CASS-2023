@@ -151,6 +151,9 @@ wb_buttons_leds wb_buttons_leds(
     .o_wb_ack(wbs_ack_o),       // request is completed 
     .o_wb_data(wbs_dat_o),      // output data
 
+    //test by rodrigo
+    .o_wb_stall(io_out[18]),
+
     // buttons
     .buttons(io_in[7]),
     .leds(io_out[13:10]),

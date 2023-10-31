@@ -4,14 +4,11 @@
         "dir::../../verilog/rtl/defines.v",
         "dir::../../verilog/rtl/user_project_wrapper.v"
     ],
-    "ROUTING_CORES": 4,
+    "ROUTING_CORES": 8,
     "CLOCK_PERIOD": 25,
     "CLOCK_PORT": "wb_clk_i",
     "CLOCK_NET": "mprj.clk",
-    "FP_PDN_MACRO_HOOKS": [
-        "egd_top_wrapper vccd1 vssd1 vccd1 vssd1,",
-        "R4_butter       vccd1 vssd1 vccd1 vssd1,",
-        "wb_buttons_leds vccd1 vssd1 vccd1 vssd1"],
+    "FP_PDN_MACRO_HOOKS": "egd_top_wrapper vccd1 vssd1 vccd1 vssd1, R4_butter vccd1 vssd1 vccd1 vssd1, wb_buttons_leds vccd1 vssd1 vccd1 vssd1",
     "MACRO_PLACEMENT_CFG": "dir::macro.cfg",
     "MAGIC_DEF_LABELS": 0,
     "VERILOG_FILES_BLACKBOX": [
@@ -61,8 +58,8 @@
     "FP_PDN_VPITCH": 180,
     "FP_PDN_HPITCH": 180,
     "RUN_CTS": 0,
-    "FP_PDN_VOFFSET": 5,
-    "FP_PDN_HOFFSET": 5,
+    "FP_PDN_VOFFSET": 7,
+    "FP_PDN_HOFFSET": 7,
     "MAGIC_ZEROIZE_ORIGIN": 0,
     "FP_SIZING": "absolute",
     "RUN_CVC": 0,
@@ -98,7 +95,7 @@
     ],
     "SYNTH_USE_PG_PINS_DEFINES": "USE_POWER_PINS",
     "pdk::sky130*": {
-        "RT_MAX_LAYER": "met4",
+        "RT_MAX_LAYER": "met5",
         "DIE_AREA": "0 0 2920 3520",
         "FP_DEF_TEMPLATE": "dir::fixed_dont_change/user_project_wrapper.def",
         "scl::sky130_fd_sc_hd": {
@@ -122,7 +119,7 @@
         "STD_CELL_LIBRARY": "gf180mcu_fd_sc_mcu7t5v0",
         "FP_PDN_CHECK_NODES": 0,
         "FP_PDN_ENABLE_RAILS": 0,
-        "RT_MAX_LAYER": "Metal4",
+        "RT_MAX_LAYER": "Metal5",
         "DIE_AREA": "0 0 3000 3000",
         "FP_DEF_TEMPLATE": "dir::fixed_dont_change/user_project_wrapper_gf180mcu.def",
         "PL_OPENPHYSYN_OPTIMIZATIONS": 0,

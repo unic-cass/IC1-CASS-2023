@@ -1,0 +1,21 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1676037725
+<< metal1 >>
+tri 0 2940 60 3000 se
+rect 60 2940 240 3000
+tri 240 2940 300 3000 sw
+rect 0 60 300 2940
+tri 0 0 60 60 ne
+rect 60 0 240 60
+tri 240 0 300 60 nw
+use sky130_fd_pr__via_l1m1__example_55959141808683  sky130_fd_pr__via_l1m1__example_55959141808683_0
+timestamp 1676037725
+transform 1 0 61 0 1 139
+box 0 0 1 1
+<< properties >>
+string GDS_END 8041566
+string GDS_FILE $PDKPATH/libs.ref/sky130_fd_io/gds/sky130_fd_io.gds
+string GDS_START 8028468
+<< end >>

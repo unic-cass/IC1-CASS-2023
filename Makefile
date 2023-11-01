@@ -28,24 +28,13 @@ export PDK?=sky130A
 #export PDK?=gf180mcuC
 export PDKPATH?=$(PDK_ROOT)/$(PDK)
 
-PYTHON_BIN ?= python3
 
-ROOTLESS ?= 0
-USER_ARGS = -u $$(id -u $$USER):$$(id -g $$USER)
-ifeq ($(ROOTLESS), 1)
-	USER_ARGS =
-endif
-export OPENLANE_ROOT?=$(PWD)/dependencies/openlane_src
-export PDK_ROOT?=$(PWD)/dependencies/pdks
-export DISABLE_LVS?=0
-
-export ROOTLESS
 
 ifeq ($(PDK),sky130A)
 	SKYWATER_COMMIT=f70d8ca46961ff92719d8870a18a076370b85f6c
-	export OPEN_PDKS_COMMIT?=78b7bc32ddb4b6f14f76883c2e2dc5b5de9d1cbc
-	export OPENLANE_TAG?=2023.07.19
-	MPW_TAG ?= mpw-9e
+	export OPEN_PDKS_COMMIT?=e6f9c8876da77220403014b116761b0b2d79aab4
+	export OPENLANE_TAG?=2023.02.23
+	MPW_TAG ?= mpw-9d
 
 ifeq ($(CARAVEL_LITE),1)
 	CARAVEL_NAME := caravel-lite
@@ -61,9 +50,9 @@ endif
 
 ifeq ($(PDK),sky130B)
 	SKYWATER_COMMIT=f70d8ca46961ff92719d8870a18a076370b85f6c
-	export OPEN_PDKS_COMMIT?=78b7bc32ddb4b6f14f76883c2e2dc5b5de9d1cbc
-	export OPENLANE_TAG?=2023.07.19
-	MPW_TAG ?= mpw-9e
+	export OPEN_PDKS_COMMIT?=e6f9c8876da77220403014b116761b0b2d79aab4
+	export OPENLANE_TAG?=2023.02.23
+	MPW_TAG ?= mpw-9d
 
 ifeq ($(CARAVEL_LITE),1)
 	CARAVEL_NAME := caravel-lite
@@ -92,7 +81,7 @@ endif
 # Include Caravel Makefile Targets
 .PHONY: % : check-caravel
 %:
-	export CARAVEL_ROOT=$(CARAVEL_ROOT) && export MPW_TAG=$(MPW_TAG) && $(MAKE) -f $(CARAVEL_ROOT)/Makefile $@
+	export CARAVEL_ROOT=$(CARAVEL_ROOT) && $(MAKE) -f $(CARAVEL_ROOT)/Makefile $@
 
 .PHONY: install
 install:
@@ -108,13 +97,8 @@ install:
 simenv:
 	docker pull efabless/dv:latest
 
-# Install cocotb docker
-.PHONY: simenv-cocotb
-simenv-cocotb:
-	docker pull efabless/dv:cocotb
-
 .PHONY: setup
-setup: check_dependencies install check-env install_mcw openlane pdk-with-volare setup-timing-scripts setup-cocotb precheck
+setup: install check-env install_mcw openlane pdk-with-volare setup-timing-scripts
 
 # Openlane
 blocks=$(shell cd openlane && find * -maxdepth 0 -type d)
@@ -123,20 +107,15 @@ $(blocks): % :
 	$(MAKE) -C openlane $*
 
 dv_patterns=$(shell cd verilog/dv && find * -maxdepth 0 -type d)
-cocotb-dv_patterns=$(shell cd verilog/dv/cocotb && find . -name "*.c"  | sed -e 's|^.*/||' -e 's/.c//')
 dv-targets-rtl=$(dv_patterns:%=verify-%-rtl)
-cocotb-dv-targets-rtl=$(cocotb-dv_patterns:%=cocotb-verify-%-rtl)
 dv-targets-gl=$(dv_patterns:%=verify-%-gl)
-cocotb-dv-targets-gl=$(cocotb-dv_patterns:%=cocotb-verify-%-gl)
 dv-targets-gl-sdf=$(dv_patterns:%=verify-%-gl-sdf)
 
 TARGET_PATH=$(shell pwd)
 verify_command="source ~/.bashrc && cd ${TARGET_PATH}/verilog/dv/$* && export SIM=${SIM} && make"
 dv_base_dependencies=simenv
 docker_run_verify=\
-	docker run \
-		$(USER_ARGS) \
-		-v ${TARGET_PATH}:${TARGET_PATH} -v ${PDK_ROOT}:${PDK_ROOT} \
+	docker run -v ${TARGET_PATH}:${TARGET_PATH} -v ${PDK_ROOT}:${PDK_ROOT} \
 		-v ${CARAVEL_ROOT}:${CARAVEL_ROOT} \
 		-v ${MCW_ROOT}:${MCW_ROOT} \
 		-e TARGET_PATH=${TARGET_PATH} -e PDK_ROOT=${PDK_ROOT} \
@@ -148,7 +127,7 @@ docker_run_verify=\
 		-e CORE_VERILOG_PATH=$(TARGET_PATH)/mgmt_core_wrapper/verilog \
 		-e CARAVEL_VERILOG_PATH=$(TARGET_PATH)/caravel/verilog \
 		-e MCW_ROOT=$(MCW_ROOT) \
-		efabless/dv:latest \
+		-u $$(id -u $$USER):$$(id -g $$USER) efabless/dv:latest \
 		sh -c $(verify_command)
 
 .PHONY: harden
@@ -235,53 +214,24 @@ uninstall:
 # Default installs to the user home directory, override by "export PRECHECK_ROOT=<precheck-installation-path>"
 .PHONY: precheck
 precheck:
-	if [ -d "$(PRECHECK_ROOT)" ]; then\
-		echo "Deleting exisiting $(PRECHECK_ROOT)" && \
-		rm -rf $(PRECHECK_ROOT) && sleep 2;\
-	fi
-	@echo "Installing Precheck.."
 	@git clone --depth=1 --branch $(MPW_TAG) https://github.com/efabless/mpw_precheck.git $(PRECHECK_ROOT)
 	@docker pull efabless/mpw_precheck:latest
 
 .PHONY: run-precheck
 run-precheck: check-pdk check-precheck
-	@if [ "$$DISABLE_LVS" = "1" ]; then\
-		$(eval INPUT_DIRECTORY := $(shell pwd)) \
-		cd $(PRECHECK_ROOT) && \
-		docker run -it -v $(PRECHECK_ROOT):$(PRECHECK_ROOT) \
-		-v $(INPUT_DIRECTORY):$(INPUT_DIRECTORY) \
-		-v $(PDK_ROOT):$(PDK_ROOT) \
-		-e INPUT_DIRECTORY=$(INPUT_DIRECTORY) \
-		-e PDK_PATH=$(PDK_ROOT)/$(PDK) \
-		-e PDK_ROOT=$(PDK_ROOT) \
-		-e PDKPATH=$(PDKPATH) \
-		-u $(shell id -u $(USER)):$(shell id -g $(USER)) \
-		efabless/mpw_precheck:latest bash -c "cd $(PRECHECK_ROOT) ; python3 mpw_precheck.py --input_directory $(INPUT_DIRECTORY) --pdk_path $(PDK_ROOT)/$(PDK) license makefile default documentation consistency gpio_defines xor magic_drc klayout_feol klayout_beol klayout_offgrid klayout_met_min_ca_density klayout_pin_label_purposes_overlapping_drawing klayout_zeroarea"; \
-	else \
-		$(eval INPUT_DIRECTORY := $(shell pwd)) \
-		cd $(PRECHECK_ROOT) && \
-		docker run -it -v $(PRECHECK_ROOT):$(PRECHECK_ROOT) \
-		-v $(INPUT_DIRECTORY):$(INPUT_DIRECTORY) \
-		-v $(PDK_ROOT):$(PDK_ROOT) \
-		-e INPUT_DIRECTORY=$(INPUT_DIRECTORY) \
-		-e PDK_PATH=$(PDK_ROOT)/$(PDK) \
-		-e PDK_ROOT=$(PDK_ROOT) \
-		-e PDKPATH=$(PDKPATH) \
-		-u $(shell id -u $(USER)):$(shell id -g $(USER)) \
-		efabless/mpw_precheck:latest bash -c "cd $(PRECHECK_ROOT) ; python3 mpw_precheck.py --input_directory $(INPUT_DIRECTORY) --pdk_path $(PDK_ROOT)/$(PDK)"; \
-	fi
-
-
-BLOCKS = $(shell cd lvs && find * -maxdepth 0 -type d)
-LVS_BLOCKS = $(foreach block, $(BLOCKS), lvs-$(block))
-$(LVS_BLOCKS): lvs-% : ./lvs/%/lvs_config.json check-pdk check-precheck
-	@$(eval INPUT_DIRECTORY := $(shell pwd))
-	@cd $(PRECHECK_ROOT) && \
+	$(eval INPUT_DIRECTORY := $(shell pwd))
+	cd $(PRECHECK_ROOT) && \
 	docker run -v $(PRECHECK_ROOT):$(PRECHECK_ROOT) \
 	-v $(INPUT_DIRECTORY):$(INPUT_DIRECTORY) \
 	-v $(PDK_ROOT):$(PDK_ROOT) \
+	-e INPUT_DIRECTORY=$(INPUT_DIRECTORY) \
+	-e PDK_PATH=$(PDK_ROOT)/$(PDK) \
+	-e PDK_ROOT=$(PDK_ROOT) \
+	-e PDKPATH=$(PDKPATH) \
 	-u $(shell id -u $(USER)):$(shell id -g $(USER)) \
-	efabless/mpw_precheck:latest bash -c "export PYTHONPATH=$(PRECHECK_ROOT) ; cd $(PRECHECK_ROOT) ; python3 checks/lvs_check/lvs.py --pdk_path $(PDK_ROOT)/$(PDK) --design_directory $(INPUT_DIRECTORY) --output_directory $(INPUT_DIRECTORY)/lvs --design_name $* --config_file $(INPUT_DIRECTORY)/lvs/$*/lvs_config.json"
+	efabless/mpw_precheck:latest bash -c "cd $(PRECHECK_ROOT) ; python3 mpw_precheck.py --input_directory $(INPUT_DIRECTORY) --pdk_path $(PDK_ROOT)/$(PDK)"
+
+
 
 .PHONY: clean
 clean:
@@ -311,12 +261,6 @@ help:
 	cd $(CARAVEL_ROOT) && $(MAKE) help
 	@$(MAKE) -pRrq -f $(lastword $(MAKEFILE_LIST)) : 2>/dev/null | awk -v RS= -F: '/^# File/,/^# Finished Make data base/ {if ($$1 !~ "^[#.]") {print $$1}}' | sort | egrep -v -e '^[^[:alnum:]]' -e '^$@$$'
 
-.PHONY: check_dependencies
-check_dependencies:
-	@if [ ! -d "$(PWD)/dependencies" ]; then \
-		mkdir $(PWD)/dependencies; \
-	fi
-
 
 export CUP_ROOT=$(shell pwd)
 export TIMING_ROOT?=$(shell pwd)/dependencies/timing-scripts
@@ -332,34 +276,6 @@ setup-timing-scripts: $(TIMING_ROOT)
 	@( cd $(TIMING_ROOT) && git pull )
 	@#( cd $(TIMING_ROOT) && git fetch && git checkout $(MPW_TAG); )
 
-.PHONY: install-caravel-cocotb
-install-caravel-cocotb:
-	rm -rf ./venv-cocotb
-	$(PYTHON_BIN) -m venv ./venv-cocotb
-	./venv-cocotb/bin/$(PYTHON_BIN) -m pip install --upgrade --no-cache-dir pip
-	./venv-cocotb/bin/$(PYTHON_BIN) -m pip install --upgrade --no-cache-dir caravel-cocotb
-
-.PHONY: setup-cocotb-env
-setup-cocotb-env:
-	@(python3 $(PROJECT_ROOT)/verilog/dv/setup-cocotb.py $(CARAVEL_ROOT) $(MCW_ROOT) $(PDK_ROOT) $(PDK) $(PROJECT_ROOT))
-
-.PHONY: setup-cocotb
-setup-cocotb: install-caravel-cocotb setup-cocotb-env simenv-cocotb
-
-.PHONY: cocotb-verify-all-rtl
-cocotb-verify-all-rtl: 
-	@(cd $(PROJECT_ROOT)/verilog/dv/cocotb && $(PROJECT_ROOT)/venv-cocotb/bin/caravel_cocotb -tl user_proj_tests/user_proj_tests.yaml )
-	
-.PHONY: cocotb-verify-all-gl
-cocotb-verify-all-gl:
-	@(cd $(PROJECT_ROOT)/verilog/dv/cocotb && $(PROJECT_ROOT)/venv-cocotb/bin/caravel_cocotb -tl user_proj_tests/user_proj_tests_gl.yaml -verbosity quiet)
-
-$(cocotb-dv-targets-rtl): cocotb-verify-%-rtl: 
-	@(cd $(PROJECT_ROOT)/verilog/dv/cocotb && $(PROJECT_ROOT)/venv-cocotb/bin/caravel_cocotb -t $*  )
-	
-$(cocotb-dv-targets-gl): cocotb-verify-%-gl:
-	@(cd $(PROJECT_ROOT)/verilog/dv/cocotb && $(PROJECT_ROOT)/venv-cocotb/bin/caravel_cocotb -t $* -verbosity quiet)
-
 ./verilog/gl/user_project_wrapper.v:
 	$(error you don't have $@)
 
@@ -373,7 +289,7 @@ $(cocotb-dv-targets-gl): cocotb-verify-%-gl:
 create-spef-mapping: ./verilog/gl/user_project_wrapper.v
 	docker run \
 		--rm \
-		$(USER_ARGS) \
+		-u $$(id -u $$USER):$$(id -g $$USER) \
 		-v $(PDK_ROOT):$(PDK_ROOT) \
 		-v $(CUP_ROOT):$(CUP_ROOT) \
 		-v $(CARAVEL_ROOT):$(CARAVEL_ROOT) \
@@ -393,7 +309,7 @@ create-spef-mapping: ./verilog/gl/user_project_wrapper.v
 extract-parasitics: ./verilog/gl/user_project_wrapper.v
 	docker run \
 		--rm \
-		$(USER_ARGS) \
+		-u $$(id -u $$USER):$$(id -g $$USER) \
 		-v $(PDK_ROOT):$(PDK_ROOT) \
 		-v $(CUP_ROOT):$(CUP_ROOT) \
 		-v $(CARAVEL_ROOT):$(CARAVEL_ROOT) \

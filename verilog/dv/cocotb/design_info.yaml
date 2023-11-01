@@ -1,9 +1,0 @@
-CARAVEL_ROOT: /home/rodrigowue/IC1-CASS-2023/caravel
-MCW_ROOT: /home/rodrigowue/IC1-CASS-2023/mgmt_core_wrapper
-PDK: sky130A
-PDK_ROOT: /home/rodrigowue/pdk
-USER_PROJECT_ROOT: /home/rodrigowue/IC1-CASS-2023
-caravan: false
-clk: 25
-emailto:
-- null

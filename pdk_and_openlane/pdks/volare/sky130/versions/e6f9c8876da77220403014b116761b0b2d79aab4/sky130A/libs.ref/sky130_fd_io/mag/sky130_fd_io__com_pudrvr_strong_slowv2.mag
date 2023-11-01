@@ -1,0 +1,40 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1676037725
+<< metal1 >>
+rect -22 1066 3467 1143
+rect -22 -162 36 1066
+tri 36 918 184 1066 nw
+rect 176 792 3438 816
+rect 176 770 3496 792
+tri 234 744 260 770 nw
+tri 3379 711 3438 770 ne
+tri 222 504 263 545 sw
+tri 3391 504 3438 551 se
+rect 3438 504 3496 770
+rect 222 385 3496 504
+tri 222 342 265 385 nw
+tri 3388 335 3438 385 ne
+tri 222 192 271 241 sw
+tri 3377 192 3438 253 se
+rect 3438 192 3496 385
+rect 222 98 3496 192
+rect 222 67 3519 98
+rect 3420 24 3519 67
+tri 36 -104 102 -38 sw
+tri 1162 -104 1168 -98 se
+tri 1168 -162 1186 -144 nw
+use sky130_fd_pr__pfet_01v8__example_55959141808654  sky130_fd_pr__pfet_01v8__example_55959141808654_0
+timestamp 1676037725
+transform 0 -1 1756 1 0 197
+box -1 0 569 1
+use sky130_fd_pr__pfet_01v8__example_55959141808654  sky130_fd_pr__pfet_01v8__example_55959141808654_1
+timestamp 1676037725
+transform 0 -1 3286 1 0 197
+box -1 0 569 1
+<< properties >>
+string GDS_END 47457452
+string GDS_FILE $PDKPATH/libs.ref/sky130_fd_io/gds/sky130_fd_io.gds
+string GDS_START 47425674
+<< end >>

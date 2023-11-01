@@ -1,0 +1,65 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1676037725
+<< metal1 >>
+rect 3252 3788 4646 3822
+tri 3809 3744 3821 3756 se
+rect 3370 3710 3892 3744
+tri 4469 3741 4516 3788 ne
+rect 4516 3718 4646 3788
+tri 3190 1666 3224 1700 se
+rect 605 1638 3276 1666
+rect 605 1099 651 1638
+tri 651 1605 684 1638 nw
+tri 3286 1606 3320 1640 se
+rect 923 1578 3371 1606
+rect 923 1090 957 1578
+tri 957 1544 991 1578 nw
+tri 3309 1374 3333 1398 se
+rect 1191 1346 3333 1374
+rect 697 960 918 994
+rect 697 907 751 960
+tri 751 922 789 960 nw
+rect 1191 576 1237 1346
+tri 1237 1312 1271 1346 nw
+<< metal2 >>
+tri 3375 1398 3409 1432 se
+rect 3409 1398 3461 3682
+use sky130_fd_pr__nfet_01v8__example_55959141808568  sky130_fd_pr__nfet_01v8__example_55959141808568_0
+timestamp 1676037725
+transform -1 0 1532 0 1 123
+box -1 0 101 1
+use sky130_fd_pr__nfet_01v8__example_55959141808569  sky130_fd_pr__nfet_01v8__example_55959141808569_0
+timestamp 1676037725
+transform -1 0 784 0 1 123
+box -1 0 413 1
+use sky130_fd_pr__nfet_01v8__example_55959141808569  sky130_fd_pr__nfet_01v8__example_55959141808569_1
+timestamp 1676037725
+transform 1 0 840 0 1 123
+box -1 0 413 1
+use sky130_fd_pr__nfet_01v8__example_55959141808570  sky130_fd_pr__nfet_01v8__example_55959141808570_0
+timestamp 1676037725
+transform 1 0 812 0 1 949
+box -1 0 101 1
+use sky130_fd_pr__nfet_01v8__example_55959141808570  sky130_fd_pr__nfet_01v8__example_55959141808570_1
+timestamp 1676037725
+transform -1 0 756 0 1 949
+box -1 0 101 1
+use sky130_fd_pr__pfet_01v8__example_55959141808477  sky130_fd_pr__pfet_01v8__example_55959141808477_0
+timestamp 1676037725
+transform -1 0 4018 0 1 3510
+box -1 0 201 1
+use sky130_fd_pr__pfet_01v8__example_55959141808477  sky130_fd_pr__pfet_01v8__example_55959141808477_1
+timestamp 1676037725
+transform 1 0 4074 0 1 3510
+box -1 0 201 1
+use sky130_fd_pr__pfet_01v8__example_55959141808567  sky130_fd_pr__pfet_01v8__example_55959141808567_0
+timestamp 1676037725
+transform -1 0 4710 0 -1 3710
+box -1 0 257 1
+<< properties >>
+string GDS_END 43593122
+string GDS_FILE $PDKPATH/libs.ref/sky130_fd_io/gds/sky130_fd_io.gds
+string GDS_START 43574044
+<< end >>

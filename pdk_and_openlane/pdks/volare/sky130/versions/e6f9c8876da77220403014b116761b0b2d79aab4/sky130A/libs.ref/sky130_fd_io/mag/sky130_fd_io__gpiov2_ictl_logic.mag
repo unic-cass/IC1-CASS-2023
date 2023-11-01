@@ -1,0 +1,93 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1676037725
+<< metal1 >>
+tri 928 649 962 683 sw
+rect 928 603 1178 649
+tri 576 556 610 590 sw
+tri 1158 583 1178 603 ne
+tri 1178 583 1244 649 sw
+rect 1344 617 1390 620
+tri 1390 617 1393 620 sw
+tri 290 491 324 525 sw
+rect 530 510 815 556
+rect 261 447 478 491
+tri 478 447 522 491 sw
+tri 795 490 815 510 ne
+tri 815 490 881 556 sw
+tri 1178 517 1244 583 ne
+tri 1244 517 1310 583 sw
+rect 1344 565 1393 617
+tri 1377 549 1393 565 ne
+tri 1393 549 1461 617 sw
+rect 261 445 617 447
+tri 461 403 503 445 ne
+rect 503 403 617 445
+tri 815 424 881 490 ne
+tri 881 424 947 490 sw
+tri 1244 451 1310 517 ne
+tri 1310 451 1376 517 sw
+tri 1393 481 1461 549 ne
+tri 1461 481 1529 549 sw
+tri 3065 524 3069 528 se
+tri 583 369 617 403 ne
+tri 881 358 947 424 ne
+tri 947 396 975 424 sw
+tri 1310 396 1365 451 ne
+rect 1365 396 1376 451
+tri 1376 396 1431 451 sw
+tri 1461 435 1507 481 ne
+rect 1507 435 1649 481
+rect 2873 478 3121 524
+tri 3035 444 3069 478 ne
+rect 3075 450 3121 478
+tri 1569 401 1603 435 ne
+rect 947 358 1091 396
+tri 947 350 955 358 ne
+rect 955 350 1091 358
+tri 1365 350 1411 396 ne
+rect 1411 350 1554 396
+tri 1742 313 1776 347 sw
+tri 2139 313 2173 347 se
+use sky130_fd_io__hvsbt_inv_x1  sky130_fd_io__hvsbt_inv_x1_0
+timestamp 1676037725
+transform 1 0 1452 0 1 0
+box 107 226 240 873
+use sky130_fd_io__hvsbt_inv_x1  sky130_fd_io__hvsbt_inv_x1_1
+timestamp 1676037725
+transform -1 0 820 0 1 0
+box 107 226 240 873
+use sky130_fd_io__hvsbt_inv_x1  sky130_fd_io__hvsbt_inv_x1_2
+timestamp 1676037725
+transform 1 0 2922 0 1 0
+box 107 226 240 873
+use sky130_fd_io__hvsbt_nand2  sky130_fd_io__hvsbt_nand2_0
+timestamp 1676037725
+transform -1 0 2287 0 1 0
+box 107 226 460 873
+use sky130_fd_io__hvsbt_nand2  sky130_fd_io__hvsbt_nand2_1
+timestamp 1676037725
+transform 1 0 2105 0 1 0
+box 107 226 460 873
+use sky130_fd_io__hvsbt_nand2  sky130_fd_io__hvsbt_nand2_2
+timestamp 1676037725
+transform -1 0 1634 0 1 0
+box 107 226 460 873
+use sky130_fd_io__hvsbt_nand2  sky130_fd_io__hvsbt_nand2_3
+timestamp 1676037725
+transform 1 0 638 0 1 0
+box 107 226 460 873
+use sky130_fd_io__hvsbt_nand2v2  sky130_fd_io__hvsbt_nand2v2_0
+timestamp 1676037725
+transform 1 0 0 0 1 0
+box 107 226 460 873
+use sky130_fd_io__hvsbt_nor  sky130_fd_io__hvsbt_nor_0
+timestamp 1676037725
+transform -1 0 3104 0 1 0
+box 107 226 460 873
+<< properties >>
+string GDS_END 45116360
+string GDS_FILE $PDKPATH/libs.ref/sky130_fd_io/gds/sky130_fd_io.gds
+string GDS_START 45093396
+<< end >>

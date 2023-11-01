@@ -87,9 +87,14 @@ jobs:
           make openlane
           make simenv
 
-      - name: Harden using Openlane
+      - name: Harden Each DT Block using Openlane
         run: |
-          make user_proj_example
+          make egd_top_wrapper
+          make R4_butter
+          make wb_buttons_leds
+
+      - name: Harden Top-Level Wrapper using Openlane
+        run: |
           make user_project_wrapper
 
       - name: run precheck

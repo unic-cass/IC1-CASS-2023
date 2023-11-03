@@ -5,9 +5,9 @@
         "dir::../../verilog/rtl/user_project_wrapper.v"
     ],
     "ROUTING_CORES": 8,
-    "CLOCK_PERIOD": 25,
+    "KLAYOUT_XOR_THREADS": 8,
+    "CLOCK_PERIOD": 35,
     "CLOCK_PORT": "wb_clk_i",
-    "CLOCK_NET": "mprj.clk",
     "FP_PDN_MACRO_HOOKS": "egd_top_wrapper vccd1 vssd1 vccd1 vssd1, R4_butter vccd1 vssd1 vccd1 vssd1, wb_buttons_leds vccd1 vssd1 vccd1 vssd1",
     "MACRO_PLACEMENT_CFG": "dir::macro.cfg",
     "MAGIC_DEF_LABELS": 0,
@@ -38,7 +38,7 @@
     "PL_RESIZER_TIMING_OPTIMIZATIONS": 0,
     "GLB_RESIZER_DESIGN_OPTIMIZATIONS": 0,
     "GLB_RESIZER_TIMING_OPTIMIZATIONS": 0,
-    "PL_RESIZER_BUFFER_INPUT_PORTS": 0,
+    "MAX_TRANSITION_CONSTRAINT": 1.0,
     "FP_PDN_ENABLE_RAILS": 0,
     "DIODE_INSERTION_STRATEGY": 0,
     "RUN_FILL_INSERTION": 0,
@@ -50,6 +50,7 @@
     "FP_PDN_VOFFSET": 5,
     "FP_PDN_HOFFSET": 5,
     "MAGIC_ZEROIZE_ORIGIN": 0,
+    "SYNTH_BUFFERING": 1,
     "FP_SIZING": "absolute",
     "RUN_CVC": 0,
     "UNIT": 2.4,
@@ -88,7 +89,7 @@
         "DIE_AREA": "0 0 2920 3520",
         "FP_DEF_TEMPLATE": "dir::fixed_dont_change/user_project_wrapper.def",
         "scl::sky130_fd_sc_hd": {
-            "CLOCK_PERIOD": 25
+            "CLOCK_PERIOD": 35
         },
         "scl::sky130_fd_sc_hdll": {
             "CLOCK_PERIOD": 10

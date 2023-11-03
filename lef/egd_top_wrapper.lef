@@ -12,7 +12,7 @@ MACRO egd_top_wrapper
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 121.070 0.000 121.350 4.000 ;
+        RECT 125.210 0.000 125.490 4.000 ;
     END
   END la_data_in_58_43[0]
   PIN la_data_in_58_43[10]
@@ -20,7 +20,7 @@ MACRO egd_top_wrapper
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 199.270 0.000 199.550 4.000 ;
+        RECT 198.810 0.000 199.090 4.000 ;
     END
   END la_data_in_58_43[10]
   PIN la_data_in_58_43[11]
@@ -28,7 +28,7 @@ MACRO egd_top_wrapper
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 207.090 0.000 207.370 4.000 ;
+        RECT 206.170 0.000 206.450 4.000 ;
     END
   END la_data_in_58_43[11]
   PIN la_data_in_58_43[12]
@@ -36,7 +36,7 @@ MACRO egd_top_wrapper
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 214.910 0.000 215.190 4.000 ;
+        RECT 213.530 0.000 213.810 4.000 ;
     END
   END la_data_in_58_43[12]
   PIN la_data_in_58_43[13]
@@ -44,7 +44,7 @@ MACRO egd_top_wrapper
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 222.730 0.000 223.010 4.000 ;
+        RECT 220.890 0.000 221.170 4.000 ;
     END
   END la_data_in_58_43[13]
   PIN la_data_in_58_43[14]
@@ -52,7 +52,7 @@ MACRO egd_top_wrapper
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 230.550 0.000 230.830 4.000 ;
+        RECT 228.250 0.000 228.530 4.000 ;
     END
   END la_data_in_58_43[14]
   PIN la_data_in_58_43[15]
@@ -60,7 +60,7 @@ MACRO egd_top_wrapper
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 238.370 0.000 238.650 4.000 ;
+        RECT 235.610 0.000 235.890 4.000 ;
     END
   END la_data_in_58_43[15]
   PIN la_data_in_58_43[1]
@@ -68,7 +68,7 @@ MACRO egd_top_wrapper
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 128.890 0.000 129.170 4.000 ;
+        RECT 132.570 0.000 132.850 4.000 ;
     END
   END la_data_in_58_43[1]
   PIN la_data_in_58_43[2]
@@ -76,7 +76,7 @@ MACRO egd_top_wrapper
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 136.710 0.000 136.990 4.000 ;
+        RECT 139.930 0.000 140.210 4.000 ;
     END
   END la_data_in_58_43[2]
   PIN la_data_in_58_43[3]
@@ -84,7 +84,7 @@ MACRO egd_top_wrapper
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 144.530 0.000 144.810 4.000 ;
+        RECT 147.290 0.000 147.570 4.000 ;
     END
   END la_data_in_58_43[3]
   PIN la_data_in_58_43[4]
@@ -92,7 +92,7 @@ MACRO egd_top_wrapper
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 152.350 0.000 152.630 4.000 ;
+        RECT 154.650 0.000 154.930 4.000 ;
     END
   END la_data_in_58_43[4]
   PIN la_data_in_58_43[5]
@@ -100,7 +100,7 @@ MACRO egd_top_wrapper
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 160.170 0.000 160.450 4.000 ;
+        RECT 162.010 0.000 162.290 4.000 ;
     END
   END la_data_in_58_43[5]
   PIN la_data_in_58_43[6]
@@ -108,7 +108,7 @@ MACRO egd_top_wrapper
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 167.990 0.000 168.270 4.000 ;
+        RECT 169.370 0.000 169.650 4.000 ;
     END
   END la_data_in_58_43[6]
   PIN la_data_in_58_43[7]
@@ -116,7 +116,7 @@ MACRO egd_top_wrapper
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 175.810 0.000 176.090 4.000 ;
+        RECT 176.730 0.000 177.010 4.000 ;
     END
   END la_data_in_58_43[7]
   PIN la_data_in_58_43[8]
@@ -124,7 +124,7 @@ MACRO egd_top_wrapper
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 183.630 0.000 183.910 4.000 ;
+        RECT 184.090 0.000 184.370 4.000 ;
     END
   END la_data_in_58_43[8]
   PIN la_data_in_58_43[9]
@@ -140,7 +140,7 @@ MACRO egd_top_wrapper
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 246.190 0.000 246.470 4.000 ;
+        RECT 242.970 0.000 243.250 4.000 ;
     END
   END la_data_in_60_59[0]
   PIN la_data_in_60_59[1]
@@ -148,7 +148,7 @@ MACRO egd_top_wrapper
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 254.010 0.000 254.290 4.000 ;
+        RECT 250.330 0.000 250.610 4.000 ;
     END
   END la_data_in_60_59[1]
   PIN la_data_in_65
@@ -156,7 +156,7 @@ MACRO egd_top_wrapper
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 261.830 0.000 262.110 4.000 ;
+        RECT 257.690 0.000 257.970 4.000 ;
     END
   END la_data_in_65
   PIN la_data_out_23_16[0]
@@ -164,7 +164,7 @@ MACRO egd_top_wrapper
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 3.770 0.000 4.050 4.000 ;
+        RECT 14.810 0.000 15.090 4.000 ;
     END
   END la_data_out_23_16[0]
   PIN la_data_out_23_16[1]
@@ -172,7 +172,7 @@ MACRO egd_top_wrapper
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 11.590 0.000 11.870 4.000 ;
+        RECT 22.170 0.000 22.450 4.000 ;
     END
   END la_data_out_23_16[1]
   PIN la_data_out_23_16[2]
@@ -180,7 +180,7 @@ MACRO egd_top_wrapper
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 19.410 0.000 19.690 4.000 ;
+        RECT 29.530 0.000 29.810 4.000 ;
     END
   END la_data_out_23_16[2]
   PIN la_data_out_23_16[3]
@@ -188,7 +188,7 @@ MACRO egd_top_wrapper
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 27.230 0.000 27.510 4.000 ;
+        RECT 36.890 0.000 37.170 4.000 ;
     END
   END la_data_out_23_16[3]
   PIN la_data_out_23_16[4]
@@ -196,7 +196,7 @@ MACRO egd_top_wrapper
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 35.050 0.000 35.330 4.000 ;
+        RECT 44.250 0.000 44.530 4.000 ;
     END
   END la_data_out_23_16[4]
   PIN la_data_out_23_16[5]
@@ -204,7 +204,7 @@ MACRO egd_top_wrapper
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 42.870 0.000 43.150 4.000 ;
+        RECT 51.610 0.000 51.890 4.000 ;
     END
   END la_data_out_23_16[5]
   PIN la_data_out_23_16[6]
@@ -212,7 +212,7 @@ MACRO egd_top_wrapper
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 50.690 0.000 50.970 4.000 ;
+        RECT 58.970 0.000 59.250 4.000 ;
     END
   END la_data_out_23_16[6]
   PIN la_data_out_23_16[7]
@@ -220,7 +220,7 @@ MACRO egd_top_wrapper
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 58.510 0.000 58.790 4.000 ;
+        RECT 66.330 0.000 66.610 4.000 ;
     END
   END la_data_out_23_16[7]
   PIN la_data_out_26_24[0]
@@ -228,7 +228,7 @@ MACRO egd_top_wrapper
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 66.330 0.000 66.610 4.000 ;
+        RECT 73.690 0.000 73.970 4.000 ;
     END
   END la_data_out_26_24[0]
   PIN la_data_out_26_24[1]
@@ -236,7 +236,7 @@ MACRO egd_top_wrapper
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 74.150 0.000 74.430 4.000 ;
+        RECT 81.050 0.000 81.330 4.000 ;
     END
   END la_data_out_26_24[1]
   PIN la_data_out_26_24[2]
@@ -244,7 +244,7 @@ MACRO egd_top_wrapper
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 81.970 0.000 82.250 4.000 ;
+        RECT 88.410 0.000 88.690 4.000 ;
     END
   END la_data_out_26_24[2]
   PIN la_data_out_30_27[0]
@@ -252,7 +252,7 @@ MACRO egd_top_wrapper
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 89.790 0.000 90.070 4.000 ;
+        RECT 95.770 0.000 96.050 4.000 ;
     END
   END la_data_out_30_27[0]
   PIN la_data_out_30_27[1]
@@ -260,7 +260,7 @@ MACRO egd_top_wrapper
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 97.610 0.000 97.890 4.000 ;
+        RECT 103.130 0.000 103.410 4.000 ;
     END
   END la_data_out_30_27[1]
   PIN la_data_out_30_27[2]
@@ -268,7 +268,7 @@ MACRO egd_top_wrapper
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 105.430 0.000 105.710 4.000 ;
+        RECT 110.490 0.000 110.770 4.000 ;
     END
   END la_data_out_30_27[2]
   PIN la_data_out_30_27[3]
@@ -276,7 +276,7 @@ MACRO egd_top_wrapper
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 113.250 0.000 113.530 4.000 ;
+        RECT 117.850 0.000 118.130 4.000 ;
     END
   END la_data_out_30_27[3]
   PIN vccd1
@@ -307,63 +307,108 @@ MACRO egd_top_wrapper
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
-      LAYER met3 ;
-        RECT 0.000 137.400 4.000 138.000 ;
+      LAYER met2 ;
+        RECT 7.450 0.000 7.730 4.000 ;
     END
   END wb_clk_i
   OBS
+      LAYER nwell ;
+        RECT 5.330 262.425 260.090 264.030 ;
+        RECT 5.330 256.985 260.090 259.815 ;
+        RECT 5.330 251.545 260.090 254.375 ;
+        RECT 5.330 246.105 260.090 248.935 ;
+        RECT 5.330 240.665 260.090 243.495 ;
+        RECT 5.330 235.225 260.090 238.055 ;
+        RECT 5.330 229.785 260.090 232.615 ;
+        RECT 5.330 224.345 260.090 227.175 ;
+        RECT 5.330 218.905 260.090 221.735 ;
+        RECT 5.330 213.465 260.090 216.295 ;
+        RECT 5.330 208.025 260.090 210.855 ;
+        RECT 5.330 202.585 260.090 205.415 ;
+        RECT 5.330 197.145 260.090 199.975 ;
+        RECT 5.330 191.705 260.090 194.535 ;
+        RECT 5.330 186.265 260.090 189.095 ;
+        RECT 5.330 180.825 260.090 183.655 ;
+        RECT 5.330 175.385 260.090 178.215 ;
+        RECT 5.330 169.945 260.090 172.775 ;
+        RECT 5.330 164.505 260.090 167.335 ;
+        RECT 5.330 159.065 260.090 161.895 ;
+        RECT 5.330 153.625 260.090 156.455 ;
+        RECT 5.330 148.185 260.090 151.015 ;
+        RECT 5.330 142.745 260.090 145.575 ;
+        RECT 5.330 137.305 260.090 140.135 ;
+        RECT 5.330 131.865 260.090 134.695 ;
+        RECT 5.330 126.425 260.090 129.255 ;
+        RECT 5.330 120.985 260.090 123.815 ;
+        RECT 5.330 115.545 260.090 118.375 ;
+        RECT 5.330 110.105 260.090 112.935 ;
+        RECT 5.330 104.665 260.090 107.495 ;
+        RECT 5.330 99.225 260.090 102.055 ;
+        RECT 5.330 93.785 260.090 96.615 ;
+        RECT 5.330 88.345 260.090 91.175 ;
+        RECT 5.330 82.905 260.090 85.735 ;
+        RECT 5.330 77.465 260.090 80.295 ;
+        RECT 5.330 72.025 260.090 74.855 ;
+        RECT 5.330 66.585 260.090 69.415 ;
+        RECT 5.330 61.145 260.090 63.975 ;
+        RECT 5.330 55.705 260.090 58.535 ;
+        RECT 5.330 50.265 260.090 53.095 ;
+        RECT 5.330 44.825 260.090 47.655 ;
+        RECT 5.330 39.385 260.090 42.215 ;
+        RECT 5.330 33.945 260.090 36.775 ;
+        RECT 5.330 28.505 260.090 31.335 ;
+        RECT 5.330 23.065 260.090 25.895 ;
+        RECT 5.330 17.625 260.090 20.455 ;
+        RECT 5.330 12.185 260.090 15.015 ;
       LAYER li1 ;
         RECT 5.520 10.795 259.900 263.925 ;
       LAYER met1 ;
-        RECT 2.830 0.380 265.350 264.080 ;
+        RECT 5.520 0.380 262.130 264.080 ;
       LAYER met2 ;
-        RECT 2.860 4.280 265.720 264.025 ;
-        RECT 2.860 0.350 3.490 4.280 ;
-        RECT 4.330 0.350 11.310 4.280 ;
-        RECT 12.150 0.350 19.130 4.280 ;
-        RECT 19.970 0.350 26.950 4.280 ;
-        RECT 27.790 0.350 34.770 4.280 ;
-        RECT 35.610 0.350 42.590 4.280 ;
-        RECT 43.430 0.350 50.410 4.280 ;
-        RECT 51.250 0.350 58.230 4.280 ;
-        RECT 59.070 0.350 66.050 4.280 ;
-        RECT 66.890 0.350 73.870 4.280 ;
-        RECT 74.710 0.350 81.690 4.280 ;
-        RECT 82.530 0.350 89.510 4.280 ;
-        RECT 90.350 0.350 97.330 4.280 ;
-        RECT 98.170 0.350 105.150 4.280 ;
-        RECT 105.990 0.350 112.970 4.280 ;
-        RECT 113.810 0.350 120.790 4.280 ;
-        RECT 121.630 0.350 128.610 4.280 ;
-        RECT 129.450 0.350 136.430 4.280 ;
-        RECT 137.270 0.350 144.250 4.280 ;
-        RECT 145.090 0.350 152.070 4.280 ;
-        RECT 152.910 0.350 159.890 4.280 ;
-        RECT 160.730 0.350 167.710 4.280 ;
-        RECT 168.550 0.350 175.530 4.280 ;
-        RECT 176.370 0.350 183.350 4.280 ;
-        RECT 184.190 0.350 191.170 4.280 ;
-        RECT 192.010 0.350 198.990 4.280 ;
-        RECT 199.830 0.350 206.810 4.280 ;
-        RECT 207.650 0.350 214.630 4.280 ;
-        RECT 215.470 0.350 222.450 4.280 ;
-        RECT 223.290 0.350 230.270 4.280 ;
-        RECT 231.110 0.350 238.090 4.280 ;
-        RECT 238.930 0.350 245.910 4.280 ;
-        RECT 246.750 0.350 253.730 4.280 ;
-        RECT 254.570 0.350 261.550 4.280 ;
-        RECT 262.390 0.350 265.720 4.280 ;
+        RECT 6.540 4.280 262.110 264.025 ;
+        RECT 6.540 0.350 7.170 4.280 ;
+        RECT 8.010 0.350 14.530 4.280 ;
+        RECT 15.370 0.350 21.890 4.280 ;
+        RECT 22.730 0.350 29.250 4.280 ;
+        RECT 30.090 0.350 36.610 4.280 ;
+        RECT 37.450 0.350 43.970 4.280 ;
+        RECT 44.810 0.350 51.330 4.280 ;
+        RECT 52.170 0.350 58.690 4.280 ;
+        RECT 59.530 0.350 66.050 4.280 ;
+        RECT 66.890 0.350 73.410 4.280 ;
+        RECT 74.250 0.350 80.770 4.280 ;
+        RECT 81.610 0.350 88.130 4.280 ;
+        RECT 88.970 0.350 95.490 4.280 ;
+        RECT 96.330 0.350 102.850 4.280 ;
+        RECT 103.690 0.350 110.210 4.280 ;
+        RECT 111.050 0.350 117.570 4.280 ;
+        RECT 118.410 0.350 124.930 4.280 ;
+        RECT 125.770 0.350 132.290 4.280 ;
+        RECT 133.130 0.350 139.650 4.280 ;
+        RECT 140.490 0.350 147.010 4.280 ;
+        RECT 147.850 0.350 154.370 4.280 ;
+        RECT 155.210 0.350 161.730 4.280 ;
+        RECT 162.570 0.350 169.090 4.280 ;
+        RECT 169.930 0.350 176.450 4.280 ;
+        RECT 177.290 0.350 183.810 4.280 ;
+        RECT 184.650 0.350 191.170 4.280 ;
+        RECT 192.010 0.350 198.530 4.280 ;
+        RECT 199.370 0.350 205.890 4.280 ;
+        RECT 206.730 0.350 213.250 4.280 ;
+        RECT 214.090 0.350 220.610 4.280 ;
+        RECT 221.450 0.350 227.970 4.280 ;
+        RECT 228.810 0.350 235.330 4.280 ;
+        RECT 236.170 0.350 242.690 4.280 ;
+        RECT 243.530 0.350 250.050 4.280 ;
+        RECT 250.890 0.350 257.410 4.280 ;
+        RECT 258.250 0.350 262.110 4.280 ;
       LAYER met3 ;
-        RECT 3.745 138.400 265.355 264.005 ;
-        RECT 4.400 137.000 265.355 138.400 ;
-        RECT 3.745 4.255 265.355 137.000 ;
+        RECT 9.040 10.715 262.135 264.005 ;
       LAYER met4 ;
-        RECT 4.895 10.240 20.640 237.825 ;
-        RECT 23.040 10.240 97.440 237.825 ;
-        RECT 99.840 10.240 174.240 237.825 ;
-        RECT 176.640 10.240 251.040 237.825 ;
-        RECT 253.440 10.240 261.905 237.825 ;
-        RECT 4.895 4.255 261.905 10.240 ;
+        RECT 9.495 14.455 20.640 254.145 ;
+        RECT 23.040 14.455 97.440 254.145 ;
+        RECT 99.840 14.455 174.240 254.145 ;
+        RECT 176.640 14.455 250.865 254.145 ;
   END
 END egd_top_wrapper
 END LIBRARY

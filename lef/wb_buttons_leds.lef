@@ -6,13 +6,13 @@ MACRO wb_buttons_leds
   CLASS BLOCK ;
   FOREIGN wb_buttons_leds ;
   ORIGIN 0.000 0.000 ;
-  SIZE 550.000 BY 550.000 ;
+  SIZE 500.000 BY 500.000 ;
   PIN buttons
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 15.270 546.000 15.550 550.000 ;
+        RECT 12.510 496.000 12.790 500.000 ;
     END
   END buttons
   PIN clk
@@ -20,7 +20,7 @@ MACRO wb_buttons_leds
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 8.830 0.000 9.110 4.000 ;
+        RECT 15.270 0.000 15.550 4.000 ;
     END
   END clk
   PIN i_wb_addr[0]
@@ -28,7 +28,7 @@ MACRO wb_buttons_leds
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 47.930 0.000 48.210 4.000 ;
+        RECT 49.770 0.000 50.050 4.000 ;
     END
   END i_wb_addr[0]
   PIN i_wb_addr[10]
@@ -36,7 +36,7 @@ MACRO wb_buttons_leds
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 126.130 0.000 126.410 4.000 ;
+        RECT 118.770 0.000 119.050 4.000 ;
     END
   END i_wb_addr[10]
   PIN i_wb_addr[11]
@@ -44,7 +44,7 @@ MACRO wb_buttons_leds
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 133.950 0.000 134.230 4.000 ;
+        RECT 125.670 0.000 125.950 4.000 ;
     END
   END i_wb_addr[11]
   PIN i_wb_addr[12]
@@ -52,7 +52,7 @@ MACRO wb_buttons_leds
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 141.770 0.000 142.050 4.000 ;
+        RECT 132.570 0.000 132.850 4.000 ;
     END
   END i_wb_addr[12]
   PIN i_wb_addr[13]
@@ -60,7 +60,7 @@ MACRO wb_buttons_leds
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 149.590 0.000 149.870 4.000 ;
+        RECT 139.470 0.000 139.750 4.000 ;
     END
   END i_wb_addr[13]
   PIN i_wb_addr[14]
@@ -68,7 +68,7 @@ MACRO wb_buttons_leds
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 157.410 0.000 157.690 4.000 ;
+        RECT 146.370 0.000 146.650 4.000 ;
     END
   END i_wb_addr[14]
   PIN i_wb_addr[15]
@@ -76,7 +76,7 @@ MACRO wb_buttons_leds
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 165.230 0.000 165.510 4.000 ;
+        RECT 153.270 0.000 153.550 4.000 ;
     END
   END i_wb_addr[15]
   PIN i_wb_addr[16]
@@ -84,7 +84,7 @@ MACRO wb_buttons_leds
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 173.050 0.000 173.330 4.000 ;
+        RECT 160.170 0.000 160.450 4.000 ;
     END
   END i_wb_addr[16]
   PIN i_wb_addr[17]
@@ -92,7 +92,7 @@ MACRO wb_buttons_leds
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 180.870 0.000 181.150 4.000 ;
+        RECT 167.070 0.000 167.350 4.000 ;
     END
   END i_wb_addr[17]
   PIN i_wb_addr[18]
@@ -100,7 +100,7 @@ MACRO wb_buttons_leds
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 188.690 0.000 188.970 4.000 ;
+        RECT 173.970 0.000 174.250 4.000 ;
     END
   END i_wb_addr[18]
   PIN i_wb_addr[19]
@@ -108,7 +108,7 @@ MACRO wb_buttons_leds
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 196.510 0.000 196.790 4.000 ;
+        RECT 180.870 0.000 181.150 4.000 ;
     END
   END i_wb_addr[19]
   PIN i_wb_addr[1]
@@ -116,7 +116,7 @@ MACRO wb_buttons_leds
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 55.750 0.000 56.030 4.000 ;
+        RECT 56.670 0.000 56.950 4.000 ;
     END
   END i_wb_addr[1]
   PIN i_wb_addr[20]
@@ -124,7 +124,7 @@ MACRO wb_buttons_leds
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 204.330 0.000 204.610 4.000 ;
+        RECT 187.770 0.000 188.050 4.000 ;
     END
   END i_wb_addr[20]
   PIN i_wb_addr[21]
@@ -132,7 +132,7 @@ MACRO wb_buttons_leds
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 212.150 0.000 212.430 4.000 ;
+        RECT 194.670 0.000 194.950 4.000 ;
     END
   END i_wb_addr[21]
   PIN i_wb_addr[22]
@@ -140,7 +140,7 @@ MACRO wb_buttons_leds
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 219.970 0.000 220.250 4.000 ;
+        RECT 201.570 0.000 201.850 4.000 ;
     END
   END i_wb_addr[22]
   PIN i_wb_addr[23]
@@ -148,7 +148,7 @@ MACRO wb_buttons_leds
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 227.790 0.000 228.070 4.000 ;
+        RECT 208.470 0.000 208.750 4.000 ;
     END
   END i_wb_addr[23]
   PIN i_wb_addr[24]
@@ -156,7 +156,7 @@ MACRO wb_buttons_leds
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 235.610 0.000 235.890 4.000 ;
+        RECT 215.370 0.000 215.650 4.000 ;
     END
   END i_wb_addr[24]
   PIN i_wb_addr[25]
@@ -164,7 +164,7 @@ MACRO wb_buttons_leds
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 243.430 0.000 243.710 4.000 ;
+        RECT 222.270 0.000 222.550 4.000 ;
     END
   END i_wb_addr[25]
   PIN i_wb_addr[26]
@@ -172,7 +172,7 @@ MACRO wb_buttons_leds
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 251.250 0.000 251.530 4.000 ;
+        RECT 229.170 0.000 229.450 4.000 ;
     END
   END i_wb_addr[26]
   PIN i_wb_addr[27]
@@ -180,7 +180,7 @@ MACRO wb_buttons_leds
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 259.070 0.000 259.350 4.000 ;
+        RECT 236.070 0.000 236.350 4.000 ;
     END
   END i_wb_addr[27]
   PIN i_wb_addr[28]
@@ -188,7 +188,7 @@ MACRO wb_buttons_leds
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 266.890 0.000 267.170 4.000 ;
+        RECT 242.970 0.000 243.250 4.000 ;
     END
   END i_wb_addr[28]
   PIN i_wb_addr[29]
@@ -196,7 +196,7 @@ MACRO wb_buttons_leds
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 274.710 0.000 274.990 4.000 ;
+        RECT 249.870 0.000 250.150 4.000 ;
     END
   END i_wb_addr[29]
   PIN i_wb_addr[2]
@@ -212,7 +212,7 @@ MACRO wb_buttons_leds
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 282.530 0.000 282.810 4.000 ;
+        RECT 256.770 0.000 257.050 4.000 ;
     END
   END i_wb_addr[30]
   PIN i_wb_addr[31]
@@ -220,7 +220,7 @@ MACRO wb_buttons_leds
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 290.350 0.000 290.630 4.000 ;
+        RECT 263.670 0.000 263.950 4.000 ;
     END
   END i_wb_addr[31]
   PIN i_wb_addr[3]
@@ -228,7 +228,7 @@ MACRO wb_buttons_leds
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 71.390 0.000 71.670 4.000 ;
+        RECT 70.470 0.000 70.750 4.000 ;
     END
   END i_wb_addr[3]
   PIN i_wb_addr[4]
@@ -236,7 +236,7 @@ MACRO wb_buttons_leds
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 79.210 0.000 79.490 4.000 ;
+        RECT 77.370 0.000 77.650 4.000 ;
     END
   END i_wb_addr[4]
   PIN i_wb_addr[5]
@@ -244,7 +244,7 @@ MACRO wb_buttons_leds
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 87.030 0.000 87.310 4.000 ;
+        RECT 84.270 0.000 84.550 4.000 ;
     END
   END i_wb_addr[5]
   PIN i_wb_addr[6]
@@ -252,7 +252,7 @@ MACRO wb_buttons_leds
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 94.850 0.000 95.130 4.000 ;
+        RECT 91.170 0.000 91.450 4.000 ;
     END
   END i_wb_addr[6]
   PIN i_wb_addr[7]
@@ -260,7 +260,7 @@ MACRO wb_buttons_leds
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 102.670 0.000 102.950 4.000 ;
+        RECT 98.070 0.000 98.350 4.000 ;
     END
   END i_wb_addr[7]
   PIN i_wb_addr[8]
@@ -268,7 +268,7 @@ MACRO wb_buttons_leds
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 110.490 0.000 110.770 4.000 ;
+        RECT 104.970 0.000 105.250 4.000 ;
     END
   END i_wb_addr[8]
   PIN i_wb_addr[9]
@@ -276,7 +276,7 @@ MACRO wb_buttons_leds
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 118.310 0.000 118.590 4.000 ;
+        RECT 111.870 0.000 112.150 4.000 ;
     END
   END i_wb_addr[9]
   PIN i_wb_cyc
@@ -284,7 +284,7 @@ MACRO wb_buttons_leds
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 24.470 0.000 24.750 4.000 ;
+        RECT 29.070 0.000 29.350 4.000 ;
     END
   END i_wb_cyc
   PIN i_wb_data[0]
@@ -292,7 +292,7 @@ MACRO wb_buttons_leds
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 298.170 0.000 298.450 4.000 ;
+        RECT 270.570 0.000 270.850 4.000 ;
     END
   END i_wb_data[0]
   PIN i_wb_data[10]
@@ -300,7 +300,7 @@ MACRO wb_buttons_leds
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 376.370 0.000 376.650 4.000 ;
+        RECT 339.570 0.000 339.850 4.000 ;
     END
   END i_wb_data[10]
   PIN i_wb_data[11]
@@ -308,7 +308,7 @@ MACRO wb_buttons_leds
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 384.190 0.000 384.470 4.000 ;
+        RECT 346.470 0.000 346.750 4.000 ;
     END
   END i_wb_data[11]
   PIN i_wb_data[12]
@@ -316,7 +316,7 @@ MACRO wb_buttons_leds
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 392.010 0.000 392.290 4.000 ;
+        RECT 353.370 0.000 353.650 4.000 ;
     END
   END i_wb_data[12]
   PIN i_wb_data[13]
@@ -324,7 +324,7 @@ MACRO wb_buttons_leds
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 399.830 0.000 400.110 4.000 ;
+        RECT 360.270 0.000 360.550 4.000 ;
     END
   END i_wb_data[13]
   PIN i_wb_data[14]
@@ -332,7 +332,7 @@ MACRO wb_buttons_leds
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 407.650 0.000 407.930 4.000 ;
+        RECT 367.170 0.000 367.450 4.000 ;
     END
   END i_wb_data[14]
   PIN i_wb_data[15]
@@ -340,7 +340,7 @@ MACRO wb_buttons_leds
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 415.470 0.000 415.750 4.000 ;
+        RECT 374.070 0.000 374.350 4.000 ;
     END
   END i_wb_data[15]
   PIN i_wb_data[16]
@@ -348,7 +348,7 @@ MACRO wb_buttons_leds
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 423.290 0.000 423.570 4.000 ;
+        RECT 380.970 0.000 381.250 4.000 ;
     END
   END i_wb_data[16]
   PIN i_wb_data[17]
@@ -356,7 +356,7 @@ MACRO wb_buttons_leds
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 431.110 0.000 431.390 4.000 ;
+        RECT 387.870 0.000 388.150 4.000 ;
     END
   END i_wb_data[17]
   PIN i_wb_data[18]
@@ -364,7 +364,7 @@ MACRO wb_buttons_leds
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 438.930 0.000 439.210 4.000 ;
+        RECT 394.770 0.000 395.050 4.000 ;
     END
   END i_wb_data[18]
   PIN i_wb_data[19]
@@ -372,7 +372,7 @@ MACRO wb_buttons_leds
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 446.750 0.000 447.030 4.000 ;
+        RECT 401.670 0.000 401.950 4.000 ;
     END
   END i_wb_data[19]
   PIN i_wb_data[1]
@@ -380,7 +380,7 @@ MACRO wb_buttons_leds
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 305.990 0.000 306.270 4.000 ;
+        RECT 277.470 0.000 277.750 4.000 ;
     END
   END i_wb_data[1]
   PIN i_wb_data[20]
@@ -388,7 +388,7 @@ MACRO wb_buttons_leds
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 454.570 0.000 454.850 4.000 ;
+        RECT 408.570 0.000 408.850 4.000 ;
     END
   END i_wb_data[20]
   PIN i_wb_data[21]
@@ -396,7 +396,7 @@ MACRO wb_buttons_leds
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 462.390 0.000 462.670 4.000 ;
+        RECT 415.470 0.000 415.750 4.000 ;
     END
   END i_wb_data[21]
   PIN i_wb_data[22]
@@ -404,7 +404,7 @@ MACRO wb_buttons_leds
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 470.210 0.000 470.490 4.000 ;
+        RECT 422.370 0.000 422.650 4.000 ;
     END
   END i_wb_data[22]
   PIN i_wb_data[23]
@@ -412,7 +412,7 @@ MACRO wb_buttons_leds
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 478.030 0.000 478.310 4.000 ;
+        RECT 429.270 0.000 429.550 4.000 ;
     END
   END i_wb_data[23]
   PIN i_wb_data[24]
@@ -420,7 +420,7 @@ MACRO wb_buttons_leds
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 485.850 0.000 486.130 4.000 ;
+        RECT 436.170 0.000 436.450 4.000 ;
     END
   END i_wb_data[24]
   PIN i_wb_data[25]
@@ -428,7 +428,7 @@ MACRO wb_buttons_leds
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 493.670 0.000 493.950 4.000 ;
+        RECT 443.070 0.000 443.350 4.000 ;
     END
   END i_wb_data[25]
   PIN i_wb_data[26]
@@ -436,7 +436,7 @@ MACRO wb_buttons_leds
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 501.490 0.000 501.770 4.000 ;
+        RECT 449.970 0.000 450.250 4.000 ;
     END
   END i_wb_data[26]
   PIN i_wb_data[27]
@@ -444,7 +444,7 @@ MACRO wb_buttons_leds
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 509.310 0.000 509.590 4.000 ;
+        RECT 456.870 0.000 457.150 4.000 ;
     END
   END i_wb_data[27]
   PIN i_wb_data[28]
@@ -452,7 +452,7 @@ MACRO wb_buttons_leds
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 517.130 0.000 517.410 4.000 ;
+        RECT 463.770 0.000 464.050 4.000 ;
     END
   END i_wb_data[28]
   PIN i_wb_data[29]
@@ -460,7 +460,7 @@ MACRO wb_buttons_leds
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 524.950 0.000 525.230 4.000 ;
+        RECT 470.670 0.000 470.950 4.000 ;
     END
   END i_wb_data[29]
   PIN i_wb_data[2]
@@ -468,7 +468,7 @@ MACRO wb_buttons_leds
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 313.810 0.000 314.090 4.000 ;
+        RECT 284.370 0.000 284.650 4.000 ;
     END
   END i_wb_data[2]
   PIN i_wb_data[30]
@@ -476,7 +476,7 @@ MACRO wb_buttons_leds
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 532.770 0.000 533.050 4.000 ;
+        RECT 477.570 0.000 477.850 4.000 ;
     END
   END i_wb_data[30]
   PIN i_wb_data[31]
@@ -484,7 +484,7 @@ MACRO wb_buttons_leds
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 540.590 0.000 540.870 4.000 ;
+        RECT 484.470 0.000 484.750 4.000 ;
     END
   END i_wb_data[31]
   PIN i_wb_data[3]
@@ -492,7 +492,7 @@ MACRO wb_buttons_leds
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 321.630 0.000 321.910 4.000 ;
+        RECT 291.270 0.000 291.550 4.000 ;
     END
   END i_wb_data[3]
   PIN i_wb_data[4]
@@ -500,7 +500,7 @@ MACRO wb_buttons_leds
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 329.450 0.000 329.730 4.000 ;
+        RECT 298.170 0.000 298.450 4.000 ;
     END
   END i_wb_data[4]
   PIN i_wb_data[5]
@@ -508,7 +508,7 @@ MACRO wb_buttons_leds
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 337.270 0.000 337.550 4.000 ;
+        RECT 305.070 0.000 305.350 4.000 ;
     END
   END i_wb_data[5]
   PIN i_wb_data[6]
@@ -516,7 +516,7 @@ MACRO wb_buttons_leds
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 345.090 0.000 345.370 4.000 ;
+        RECT 311.970 0.000 312.250 4.000 ;
     END
   END i_wb_data[6]
   PIN i_wb_data[7]
@@ -524,7 +524,7 @@ MACRO wb_buttons_leds
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 352.910 0.000 353.190 4.000 ;
+        RECT 318.870 0.000 319.150 4.000 ;
     END
   END i_wb_data[7]
   PIN i_wb_data[8]
@@ -532,7 +532,7 @@ MACRO wb_buttons_leds
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 360.730 0.000 361.010 4.000 ;
+        RECT 325.770 0.000 326.050 4.000 ;
     END
   END i_wb_data[8]
   PIN i_wb_data[9]
@@ -540,7 +540,7 @@ MACRO wb_buttons_leds
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 368.550 0.000 368.830 4.000 ;
+        RECT 332.670 0.000 332.950 4.000 ;
     END
   END i_wb_data[9]
   PIN i_wb_stb
@@ -548,7 +548,7 @@ MACRO wb_buttons_leds
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 32.290 0.000 32.570 4.000 ;
+        RECT 35.970 0.000 36.250 4.000 ;
     END
   END i_wb_stb
   PIN i_wb_we
@@ -556,7 +556,7 @@ MACRO wb_buttons_leds
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 40.110 0.000 40.390 4.000 ;
+        RECT 42.870 0.000 43.150 4.000 ;
     END
   END i_wb_we
   PIN led_enb[0]
@@ -564,7 +564,7 @@ MACRO wb_buttons_leds
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 36.890 546.000 37.170 550.000 ;
+        RECT 32.290 496.000 32.570 500.000 ;
     END
   END led_enb[0]
   PIN led_enb[10]
@@ -572,7 +572,7 @@ MACRO wb_buttons_leds
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 253.090 546.000 253.370 550.000 ;
+        RECT 230.090 496.000 230.370 500.000 ;
     END
   END led_enb[10]
   PIN led_enb[11]
@@ -580,7 +580,7 @@ MACRO wb_buttons_leds
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 274.710 546.000 274.990 550.000 ;
+        RECT 249.870 496.000 250.150 500.000 ;
     END
   END led_enb[11]
   PIN led_enb[1]
@@ -588,7 +588,7 @@ MACRO wb_buttons_leds
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 58.510 546.000 58.790 550.000 ;
+        RECT 52.070 496.000 52.350 500.000 ;
     END
   END led_enb[1]
   PIN led_enb[2]
@@ -596,7 +596,7 @@ MACRO wb_buttons_leds
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 80.130 546.000 80.410 550.000 ;
+        RECT 71.850 496.000 72.130 500.000 ;
     END
   END led_enb[2]
   PIN led_enb[3]
@@ -604,7 +604,7 @@ MACRO wb_buttons_leds
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 101.750 546.000 102.030 550.000 ;
+        RECT 91.630 496.000 91.910 500.000 ;
     END
   END led_enb[3]
   PIN led_enb[4]
@@ -612,7 +612,7 @@ MACRO wb_buttons_leds
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 123.370 546.000 123.650 550.000 ;
+        RECT 111.410 496.000 111.690 500.000 ;
     END
   END led_enb[4]
   PIN led_enb[5]
@@ -620,7 +620,7 @@ MACRO wb_buttons_leds
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 144.990 546.000 145.270 550.000 ;
+        RECT 131.190 496.000 131.470 500.000 ;
     END
   END led_enb[5]
   PIN led_enb[6]
@@ -628,7 +628,7 @@ MACRO wb_buttons_leds
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 166.610 546.000 166.890 550.000 ;
+        RECT 150.970 496.000 151.250 500.000 ;
     END
   END led_enb[6]
   PIN led_enb[7]
@@ -636,7 +636,7 @@ MACRO wb_buttons_leds
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 188.230 546.000 188.510 550.000 ;
+        RECT 170.750 496.000 171.030 500.000 ;
     END
   END led_enb[7]
   PIN led_enb[8]
@@ -644,7 +644,7 @@ MACRO wb_buttons_leds
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 209.850 546.000 210.130 550.000 ;
+        RECT 190.530 496.000 190.810 500.000 ;
     END
   END led_enb[8]
   PIN led_enb[9]
@@ -652,7 +652,7 @@ MACRO wb_buttons_leds
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 231.470 546.000 231.750 550.000 ;
+        RECT 210.310 496.000 210.590 500.000 ;
     END
   END led_enb[9]
   PIN leds[0]
@@ -660,7 +660,7 @@ MACRO wb_buttons_leds
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 296.330 546.000 296.610 550.000 ;
+        RECT 269.650 496.000 269.930 500.000 ;
     END
   END leds[0]
   PIN leds[10]
@@ -668,7 +668,7 @@ MACRO wb_buttons_leds
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 512.530 546.000 512.810 550.000 ;
+        RECT 467.450 496.000 467.730 500.000 ;
     END
   END leds[10]
   PIN leds[11]
@@ -676,7 +676,7 @@ MACRO wb_buttons_leds
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 534.150 546.000 534.430 550.000 ;
+        RECT 487.230 496.000 487.510 500.000 ;
     END
   END leds[11]
   PIN leds[1]
@@ -684,7 +684,7 @@ MACRO wb_buttons_leds
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 317.950 546.000 318.230 550.000 ;
+        RECT 289.430 496.000 289.710 500.000 ;
     END
   END leds[1]
   PIN leds[2]
@@ -692,7 +692,7 @@ MACRO wb_buttons_leds
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 339.570 546.000 339.850 550.000 ;
+        RECT 309.210 496.000 309.490 500.000 ;
     END
   END leds[2]
   PIN leds[3]
@@ -700,7 +700,7 @@ MACRO wb_buttons_leds
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 361.190 546.000 361.470 550.000 ;
+        RECT 328.990 496.000 329.270 500.000 ;
     END
   END leds[3]
   PIN leds[4]
@@ -708,7 +708,7 @@ MACRO wb_buttons_leds
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 382.810 546.000 383.090 550.000 ;
+        RECT 348.770 496.000 349.050 500.000 ;
     END
   END leds[4]
   PIN leds[5]
@@ -716,7 +716,7 @@ MACRO wb_buttons_leds
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 404.430 546.000 404.710 550.000 ;
+        RECT 368.550 496.000 368.830 500.000 ;
     END
   END leds[5]
   PIN leds[6]
@@ -724,7 +724,7 @@ MACRO wb_buttons_leds
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 426.050 546.000 426.330 550.000 ;
+        RECT 388.330 496.000 388.610 500.000 ;
     END
   END leds[6]
   PIN leds[7]
@@ -732,7 +732,7 @@ MACRO wb_buttons_leds
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 447.670 546.000 447.950 550.000 ;
+        RECT 408.110 496.000 408.390 500.000 ;
     END
   END leds[7]
   PIN leds[8]
@@ -740,7 +740,7 @@ MACRO wb_buttons_leds
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 469.290 546.000 469.570 550.000 ;
+        RECT 427.890 496.000 428.170 500.000 ;
     END
   END leds[8]
   PIN leds[9]
@@ -748,7 +748,7 @@ MACRO wb_buttons_leds
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 490.910 546.000 491.190 550.000 ;
+        RECT 447.670 496.000 447.950 500.000 ;
     END
   END leds[9]
   PIN o_wb_ack
@@ -756,7 +756,7 @@ MACRO wb_buttons_leds
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 546.000 16.360 550.000 16.960 ;
+        RECT 0.000 13.640 4.000 14.240 ;
     END
   END o_wb_ack
   PIN o_wb_data[0]
@@ -764,7 +764,7 @@ MACRO wb_buttons_leds
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 546.000 47.640 550.000 48.240 ;
+        RECT 0.000 42.200 4.000 42.800 ;
     END
   END o_wb_data[0]
   PIN o_wb_data[10]
@@ -772,7 +772,7 @@ MACRO wb_buttons_leds
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 546.000 204.040 550.000 204.640 ;
+        RECT 0.000 185.000 4.000 185.600 ;
     END
   END o_wb_data[10]
   PIN o_wb_data[11]
@@ -780,7 +780,7 @@ MACRO wb_buttons_leds
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 546.000 219.680 550.000 220.280 ;
+        RECT 0.000 199.280 4.000 199.880 ;
     END
   END o_wb_data[11]
   PIN o_wb_data[12]
@@ -788,7 +788,7 @@ MACRO wb_buttons_leds
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 546.000 235.320 550.000 235.920 ;
+        RECT 0.000 213.560 4.000 214.160 ;
     END
   END o_wb_data[12]
   PIN o_wb_data[13]
@@ -796,7 +796,7 @@ MACRO wb_buttons_leds
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 546.000 250.960 550.000 251.560 ;
+        RECT 0.000 227.840 4.000 228.440 ;
     END
   END o_wb_data[13]
   PIN o_wb_data[14]
@@ -804,7 +804,7 @@ MACRO wb_buttons_leds
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 546.000 266.600 550.000 267.200 ;
+        RECT 0.000 242.120 4.000 242.720 ;
     END
   END o_wb_data[14]
   PIN o_wb_data[15]
@@ -812,7 +812,7 @@ MACRO wb_buttons_leds
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 546.000 282.240 550.000 282.840 ;
+        RECT 0.000 256.400 4.000 257.000 ;
     END
   END o_wb_data[15]
   PIN o_wb_data[16]
@@ -820,7 +820,7 @@ MACRO wb_buttons_leds
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 546.000 297.880 550.000 298.480 ;
+        RECT 0.000 270.680 4.000 271.280 ;
     END
   END o_wb_data[16]
   PIN o_wb_data[17]
@@ -828,7 +828,7 @@ MACRO wb_buttons_leds
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 546.000 313.520 550.000 314.120 ;
+        RECT 0.000 284.960 4.000 285.560 ;
     END
   END o_wb_data[17]
   PIN o_wb_data[18]
@@ -836,7 +836,7 @@ MACRO wb_buttons_leds
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 546.000 329.160 550.000 329.760 ;
+        RECT 0.000 299.240 4.000 299.840 ;
     END
   END o_wb_data[18]
   PIN o_wb_data[19]
@@ -844,7 +844,7 @@ MACRO wb_buttons_leds
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 546.000 344.800 550.000 345.400 ;
+        RECT 0.000 313.520 4.000 314.120 ;
     END
   END o_wb_data[19]
   PIN o_wb_data[1]
@@ -852,7 +852,7 @@ MACRO wb_buttons_leds
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 546.000 63.280 550.000 63.880 ;
+        RECT 0.000 56.480 4.000 57.080 ;
     END
   END o_wb_data[1]
   PIN o_wb_data[20]
@@ -860,7 +860,7 @@ MACRO wb_buttons_leds
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 546.000 360.440 550.000 361.040 ;
+        RECT 0.000 327.800 4.000 328.400 ;
     END
   END o_wb_data[20]
   PIN o_wb_data[21]
@@ -868,7 +868,7 @@ MACRO wb_buttons_leds
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 546.000 376.080 550.000 376.680 ;
+        RECT 0.000 342.080 4.000 342.680 ;
     END
   END o_wb_data[21]
   PIN o_wb_data[22]
@@ -876,7 +876,7 @@ MACRO wb_buttons_leds
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 546.000 391.720 550.000 392.320 ;
+        RECT 0.000 356.360 4.000 356.960 ;
     END
   END o_wb_data[22]
   PIN o_wb_data[23]
@@ -884,7 +884,7 @@ MACRO wb_buttons_leds
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 546.000 407.360 550.000 407.960 ;
+        RECT 0.000 370.640 4.000 371.240 ;
     END
   END o_wb_data[23]
   PIN o_wb_data[24]
@@ -892,7 +892,7 @@ MACRO wb_buttons_leds
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 546.000 423.000 550.000 423.600 ;
+        RECT 0.000 384.920 4.000 385.520 ;
     END
   END o_wb_data[24]
   PIN o_wb_data[25]
@@ -900,7 +900,7 @@ MACRO wb_buttons_leds
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 546.000 438.640 550.000 439.240 ;
+        RECT 0.000 399.200 4.000 399.800 ;
     END
   END o_wb_data[25]
   PIN o_wb_data[26]
@@ -908,7 +908,7 @@ MACRO wb_buttons_leds
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 546.000 454.280 550.000 454.880 ;
+        RECT 0.000 413.480 4.000 414.080 ;
     END
   END o_wb_data[26]
   PIN o_wb_data[27]
@@ -916,7 +916,7 @@ MACRO wb_buttons_leds
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 546.000 469.920 550.000 470.520 ;
+        RECT 0.000 427.760 4.000 428.360 ;
     END
   END o_wb_data[27]
   PIN o_wb_data[28]
@@ -924,7 +924,7 @@ MACRO wb_buttons_leds
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 546.000 485.560 550.000 486.160 ;
+        RECT 0.000 442.040 4.000 442.640 ;
     END
   END o_wb_data[28]
   PIN o_wb_data[29]
@@ -932,7 +932,7 @@ MACRO wb_buttons_leds
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 546.000 501.200 550.000 501.800 ;
+        RECT 0.000 456.320 4.000 456.920 ;
     END
   END o_wb_data[29]
   PIN o_wb_data[2]
@@ -940,7 +940,7 @@ MACRO wb_buttons_leds
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 546.000 78.920 550.000 79.520 ;
+        RECT 0.000 70.760 4.000 71.360 ;
     END
   END o_wb_data[2]
   PIN o_wb_data[30]
@@ -948,7 +948,7 @@ MACRO wb_buttons_leds
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 546.000 516.840 550.000 517.440 ;
+        RECT 0.000 470.600 4.000 471.200 ;
     END
   END o_wb_data[30]
   PIN o_wb_data[31]
@@ -956,7 +956,7 @@ MACRO wb_buttons_leds
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 546.000 532.480 550.000 533.080 ;
+        RECT 0.000 484.880 4.000 485.480 ;
     END
   END o_wb_data[31]
   PIN o_wb_data[3]
@@ -964,7 +964,7 @@ MACRO wb_buttons_leds
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 546.000 94.560 550.000 95.160 ;
+        RECT 0.000 85.040 4.000 85.640 ;
     END
   END o_wb_data[3]
   PIN o_wb_data[4]
@@ -972,7 +972,7 @@ MACRO wb_buttons_leds
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 546.000 110.200 550.000 110.800 ;
+        RECT 0.000 99.320 4.000 99.920 ;
     END
   END o_wb_data[4]
   PIN o_wb_data[5]
@@ -980,7 +980,7 @@ MACRO wb_buttons_leds
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 546.000 125.840 550.000 126.440 ;
+        RECT 0.000 113.600 4.000 114.200 ;
     END
   END o_wb_data[5]
   PIN o_wb_data[6]
@@ -988,7 +988,7 @@ MACRO wb_buttons_leds
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 546.000 141.480 550.000 142.080 ;
+        RECT 0.000 127.880 4.000 128.480 ;
     END
   END o_wb_data[6]
   PIN o_wb_data[7]
@@ -996,7 +996,7 @@ MACRO wb_buttons_leds
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 546.000 157.120 550.000 157.720 ;
+        RECT 0.000 142.160 4.000 142.760 ;
     END
   END o_wb_data[7]
   PIN o_wb_data[8]
@@ -1004,7 +1004,7 @@ MACRO wb_buttons_leds
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 546.000 172.760 550.000 173.360 ;
+        RECT 0.000 156.440 4.000 157.040 ;
     END
   END o_wb_data[8]
   PIN o_wb_data[9]
@@ -1012,7 +1012,7 @@ MACRO wb_buttons_leds
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 546.000 188.400 550.000 189.000 ;
+        RECT 0.000 170.720 4.000 171.320 ;
     END
   END o_wb_data[9]
   PIN o_wb_stall
@@ -1020,7 +1020,7 @@ MACRO wb_buttons_leds
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 546.000 32.000 550.000 32.600 ;
+        RECT 0.000 27.920 4.000 28.520 ;
     END
   END o_wb_stall
   PIN reset
@@ -1028,7 +1028,7 @@ MACRO wb_buttons_leds
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 16.650 0.000 16.930 4.000 ;
+        RECT 22.170 0.000 22.450 4.000 ;
     END
   END reset
   PIN vccd1
@@ -1036,19 +1036,19 @@ MACRO wb_buttons_leds
     USE POWER ;
     PORT
       LAYER met4 ;
-        RECT 21.040 10.640 22.640 538.800 ;
+        RECT 21.040 10.640 22.640 487.120 ;
     END
     PORT
       LAYER met4 ;
-        RECT 174.640 10.640 176.240 538.800 ;
+        RECT 174.640 10.640 176.240 487.120 ;
     END
     PORT
       LAYER met4 ;
-        RECT 328.240 10.640 329.840 538.800 ;
+        RECT 328.240 10.640 329.840 487.120 ;
     END
     PORT
       LAYER met4 ;
-        RECT 481.840 10.640 483.440 538.800 ;
+        RECT 481.840 10.640 483.440 487.120 ;
     END
   END vccd1
   PIN vssd1
@@ -1056,294 +1056,198 @@ MACRO wb_buttons_leds
     USE GROUND ;
     PORT
       LAYER met4 ;
-        RECT 97.840 10.640 99.440 538.800 ;
+        RECT 97.840 10.640 99.440 487.120 ;
     END
     PORT
       LAYER met4 ;
-        RECT 251.440 10.640 253.040 538.800 ;
+        RECT 251.440 10.640 253.040 487.120 ;
     END
     PORT
       LAYER met4 ;
-        RECT 405.040 10.640 406.640 538.800 ;
+        RECT 405.040 10.640 406.640 487.120 ;
     END
   END vssd1
   OBS
-      LAYER nwell ;
-        RECT 5.330 534.425 544.370 537.255 ;
-        RECT 5.330 528.985 544.370 531.815 ;
-        RECT 5.330 523.545 544.370 526.375 ;
-        RECT 5.330 518.105 544.370 520.935 ;
-        RECT 5.330 512.665 544.370 515.495 ;
-        RECT 5.330 507.225 544.370 510.055 ;
-        RECT 5.330 501.785 544.370 504.615 ;
-        RECT 5.330 496.345 544.370 499.175 ;
-        RECT 5.330 490.905 544.370 493.735 ;
-        RECT 5.330 485.465 544.370 488.295 ;
-        RECT 5.330 480.025 544.370 482.855 ;
-        RECT 5.330 474.585 544.370 477.415 ;
-        RECT 5.330 469.145 544.370 471.975 ;
-        RECT 5.330 463.705 544.370 466.535 ;
-        RECT 5.330 458.265 544.370 461.095 ;
-        RECT 5.330 452.825 544.370 455.655 ;
-        RECT 5.330 447.385 544.370 450.215 ;
-        RECT 5.330 441.945 544.370 444.775 ;
-        RECT 5.330 436.505 544.370 439.335 ;
-        RECT 5.330 431.065 544.370 433.895 ;
-        RECT 5.330 425.625 544.370 428.455 ;
-        RECT 5.330 420.185 544.370 423.015 ;
-        RECT 5.330 414.745 544.370 417.575 ;
-        RECT 5.330 409.305 544.370 412.135 ;
-        RECT 5.330 403.865 544.370 406.695 ;
-        RECT 5.330 398.425 544.370 401.255 ;
-        RECT 5.330 392.985 544.370 395.815 ;
-        RECT 5.330 387.545 544.370 390.375 ;
-        RECT 5.330 382.105 544.370 384.935 ;
-        RECT 5.330 376.665 544.370 379.495 ;
-        RECT 5.330 371.225 544.370 374.055 ;
-        RECT 5.330 365.785 544.370 368.615 ;
-        RECT 5.330 360.345 544.370 363.175 ;
-        RECT 5.330 354.905 544.370 357.735 ;
-        RECT 5.330 349.465 544.370 352.295 ;
-        RECT 5.330 344.025 544.370 346.855 ;
-        RECT 5.330 338.585 544.370 341.415 ;
-        RECT 5.330 333.145 544.370 335.975 ;
-        RECT 5.330 327.705 544.370 330.535 ;
-        RECT 5.330 322.265 544.370 325.095 ;
-        RECT 5.330 316.825 544.370 319.655 ;
-        RECT 5.330 311.385 544.370 314.215 ;
-        RECT 5.330 305.945 544.370 308.775 ;
-        RECT 5.330 300.505 544.370 303.335 ;
-        RECT 5.330 295.065 544.370 297.895 ;
-        RECT 5.330 289.625 544.370 292.455 ;
-        RECT 5.330 284.185 544.370 287.015 ;
-        RECT 5.330 278.745 544.370 281.575 ;
-        RECT 5.330 273.305 544.370 276.135 ;
-        RECT 5.330 267.865 544.370 270.695 ;
-        RECT 5.330 262.425 544.370 265.255 ;
-        RECT 5.330 256.985 544.370 259.815 ;
-        RECT 5.330 251.545 544.370 254.375 ;
-        RECT 5.330 246.105 544.370 248.935 ;
-        RECT 5.330 240.665 544.370 243.495 ;
-        RECT 5.330 235.225 544.370 238.055 ;
-        RECT 5.330 229.785 544.370 232.615 ;
-        RECT 5.330 224.345 544.370 227.175 ;
-        RECT 5.330 218.905 544.370 221.735 ;
-        RECT 5.330 213.465 544.370 216.295 ;
-        RECT 5.330 208.025 544.370 210.855 ;
-        RECT 5.330 202.585 544.370 205.415 ;
-        RECT 5.330 197.145 544.370 199.975 ;
-        RECT 5.330 191.705 544.370 194.535 ;
-        RECT 5.330 186.265 544.370 189.095 ;
-        RECT 5.330 180.825 544.370 183.655 ;
-        RECT 5.330 175.385 544.370 178.215 ;
-        RECT 5.330 169.945 544.370 172.775 ;
-        RECT 5.330 164.505 544.370 167.335 ;
-        RECT 5.330 159.065 544.370 161.895 ;
-        RECT 5.330 153.625 544.370 156.455 ;
-        RECT 5.330 148.185 544.370 151.015 ;
-        RECT 5.330 142.745 544.370 145.575 ;
-        RECT 5.330 137.305 544.370 140.135 ;
-        RECT 5.330 131.865 544.370 134.695 ;
-        RECT 5.330 126.425 544.370 129.255 ;
-        RECT 5.330 120.985 544.370 123.815 ;
-        RECT 5.330 115.545 544.370 118.375 ;
-        RECT 5.330 110.105 544.370 112.935 ;
-        RECT 5.330 104.665 544.370 107.495 ;
-        RECT 5.330 99.225 544.370 102.055 ;
-        RECT 5.330 93.785 544.370 96.615 ;
-        RECT 5.330 88.345 544.370 91.175 ;
-        RECT 5.330 82.905 544.370 85.735 ;
-        RECT 5.330 77.465 544.370 80.295 ;
-        RECT 5.330 72.025 544.370 74.855 ;
-        RECT 5.330 66.585 544.370 69.415 ;
-        RECT 5.330 61.145 544.370 63.975 ;
-        RECT 5.330 55.705 544.370 58.535 ;
-        RECT 5.330 50.265 544.370 53.095 ;
-        RECT 5.330 44.825 544.370 47.655 ;
-        RECT 5.330 39.385 544.370 42.215 ;
-        RECT 5.330 33.945 544.370 36.775 ;
-        RECT 5.330 28.505 544.370 31.335 ;
-        RECT 5.330 23.065 544.370 25.895 ;
-        RECT 5.330 17.625 544.370 20.455 ;
-        RECT 5.330 12.185 544.370 15.015 ;
       LAYER li1 ;
-        RECT 5.520 10.795 544.180 538.645 ;
+        RECT 5.520 10.795 494.040 486.965 ;
       LAYER met1 ;
-        RECT 5.520 0.380 545.490 545.660 ;
+        RECT 4.670 0.380 494.040 495.680 ;
       LAYER met2 ;
-        RECT 8.840 545.720 14.990 546.000 ;
-        RECT 15.830 545.720 36.610 546.000 ;
-        RECT 37.450 545.720 58.230 546.000 ;
-        RECT 59.070 545.720 79.850 546.000 ;
-        RECT 80.690 545.720 101.470 546.000 ;
-        RECT 102.310 545.720 123.090 546.000 ;
-        RECT 123.930 545.720 144.710 546.000 ;
-        RECT 145.550 545.720 166.330 546.000 ;
-        RECT 167.170 545.720 187.950 546.000 ;
-        RECT 188.790 545.720 209.570 546.000 ;
-        RECT 210.410 545.720 231.190 546.000 ;
-        RECT 232.030 545.720 252.810 546.000 ;
-        RECT 253.650 545.720 274.430 546.000 ;
-        RECT 275.270 545.720 296.050 546.000 ;
-        RECT 296.890 545.720 317.670 546.000 ;
-        RECT 318.510 545.720 339.290 546.000 ;
-        RECT 340.130 545.720 360.910 546.000 ;
-        RECT 361.750 545.720 382.530 546.000 ;
-        RECT 383.370 545.720 404.150 546.000 ;
-        RECT 404.990 545.720 425.770 546.000 ;
-        RECT 426.610 545.720 447.390 546.000 ;
-        RECT 448.230 545.720 469.010 546.000 ;
-        RECT 469.850 545.720 490.630 546.000 ;
-        RECT 491.470 545.720 512.250 546.000 ;
-        RECT 513.090 545.720 533.870 546.000 ;
-        RECT 534.710 545.720 545.470 546.000 ;
-        RECT 8.840 4.280 545.470 545.720 ;
-        RECT 9.390 0.350 16.370 4.280 ;
-        RECT 17.210 0.350 24.190 4.280 ;
-        RECT 25.030 0.350 32.010 4.280 ;
-        RECT 32.850 0.350 39.830 4.280 ;
-        RECT 40.670 0.350 47.650 4.280 ;
-        RECT 48.490 0.350 55.470 4.280 ;
-        RECT 56.310 0.350 63.290 4.280 ;
-        RECT 64.130 0.350 71.110 4.280 ;
-        RECT 71.950 0.350 78.930 4.280 ;
-        RECT 79.770 0.350 86.750 4.280 ;
-        RECT 87.590 0.350 94.570 4.280 ;
-        RECT 95.410 0.350 102.390 4.280 ;
-        RECT 103.230 0.350 110.210 4.280 ;
-        RECT 111.050 0.350 118.030 4.280 ;
-        RECT 118.870 0.350 125.850 4.280 ;
-        RECT 126.690 0.350 133.670 4.280 ;
-        RECT 134.510 0.350 141.490 4.280 ;
-        RECT 142.330 0.350 149.310 4.280 ;
-        RECT 150.150 0.350 157.130 4.280 ;
-        RECT 157.970 0.350 164.950 4.280 ;
-        RECT 165.790 0.350 172.770 4.280 ;
-        RECT 173.610 0.350 180.590 4.280 ;
-        RECT 181.430 0.350 188.410 4.280 ;
-        RECT 189.250 0.350 196.230 4.280 ;
-        RECT 197.070 0.350 204.050 4.280 ;
-        RECT 204.890 0.350 211.870 4.280 ;
-        RECT 212.710 0.350 219.690 4.280 ;
-        RECT 220.530 0.350 227.510 4.280 ;
-        RECT 228.350 0.350 235.330 4.280 ;
-        RECT 236.170 0.350 243.150 4.280 ;
-        RECT 243.990 0.350 250.970 4.280 ;
-        RECT 251.810 0.350 258.790 4.280 ;
-        RECT 259.630 0.350 266.610 4.280 ;
-        RECT 267.450 0.350 274.430 4.280 ;
-        RECT 275.270 0.350 282.250 4.280 ;
-        RECT 283.090 0.350 290.070 4.280 ;
-        RECT 290.910 0.350 297.890 4.280 ;
-        RECT 298.730 0.350 305.710 4.280 ;
-        RECT 306.550 0.350 313.530 4.280 ;
-        RECT 314.370 0.350 321.350 4.280 ;
-        RECT 322.190 0.350 329.170 4.280 ;
-        RECT 330.010 0.350 336.990 4.280 ;
-        RECT 337.830 0.350 344.810 4.280 ;
-        RECT 345.650 0.350 352.630 4.280 ;
-        RECT 353.470 0.350 360.450 4.280 ;
-        RECT 361.290 0.350 368.270 4.280 ;
-        RECT 369.110 0.350 376.090 4.280 ;
-        RECT 376.930 0.350 383.910 4.280 ;
-        RECT 384.750 0.350 391.730 4.280 ;
-        RECT 392.570 0.350 399.550 4.280 ;
-        RECT 400.390 0.350 407.370 4.280 ;
-        RECT 408.210 0.350 415.190 4.280 ;
-        RECT 416.030 0.350 423.010 4.280 ;
-        RECT 423.850 0.350 430.830 4.280 ;
-        RECT 431.670 0.350 438.650 4.280 ;
-        RECT 439.490 0.350 446.470 4.280 ;
-        RECT 447.310 0.350 454.290 4.280 ;
-        RECT 455.130 0.350 462.110 4.280 ;
-        RECT 462.950 0.350 469.930 4.280 ;
-        RECT 470.770 0.350 477.750 4.280 ;
-        RECT 478.590 0.350 485.570 4.280 ;
-        RECT 486.410 0.350 493.390 4.280 ;
-        RECT 494.230 0.350 501.210 4.280 ;
-        RECT 502.050 0.350 509.030 4.280 ;
-        RECT 509.870 0.350 516.850 4.280 ;
-        RECT 517.690 0.350 524.670 4.280 ;
-        RECT 525.510 0.350 532.490 4.280 ;
-        RECT 533.330 0.350 540.310 4.280 ;
-        RECT 541.150 0.350 545.470 4.280 ;
+        RECT 4.690 495.720 12.230 496.810 ;
+        RECT 13.070 495.720 32.010 496.810 ;
+        RECT 32.850 495.720 51.790 496.810 ;
+        RECT 52.630 495.720 71.570 496.810 ;
+        RECT 72.410 495.720 91.350 496.810 ;
+        RECT 92.190 495.720 111.130 496.810 ;
+        RECT 111.970 495.720 130.910 496.810 ;
+        RECT 131.750 495.720 150.690 496.810 ;
+        RECT 151.530 495.720 170.470 496.810 ;
+        RECT 171.310 495.720 190.250 496.810 ;
+        RECT 191.090 495.720 210.030 496.810 ;
+        RECT 210.870 495.720 229.810 496.810 ;
+        RECT 230.650 495.720 249.590 496.810 ;
+        RECT 250.430 495.720 269.370 496.810 ;
+        RECT 270.210 495.720 289.150 496.810 ;
+        RECT 289.990 495.720 308.930 496.810 ;
+        RECT 309.770 495.720 328.710 496.810 ;
+        RECT 329.550 495.720 348.490 496.810 ;
+        RECT 349.330 495.720 368.270 496.810 ;
+        RECT 369.110 495.720 388.050 496.810 ;
+        RECT 388.890 495.720 407.830 496.810 ;
+        RECT 408.670 495.720 427.610 496.810 ;
+        RECT 428.450 495.720 447.390 496.810 ;
+        RECT 448.230 495.720 467.170 496.810 ;
+        RECT 468.010 495.720 486.950 496.810 ;
+        RECT 487.790 495.720 490.720 496.810 ;
+        RECT 4.690 4.280 490.720 495.720 ;
+        RECT 4.690 0.350 14.990 4.280 ;
+        RECT 15.830 0.350 21.890 4.280 ;
+        RECT 22.730 0.350 28.790 4.280 ;
+        RECT 29.630 0.350 35.690 4.280 ;
+        RECT 36.530 0.350 42.590 4.280 ;
+        RECT 43.430 0.350 49.490 4.280 ;
+        RECT 50.330 0.350 56.390 4.280 ;
+        RECT 57.230 0.350 63.290 4.280 ;
+        RECT 64.130 0.350 70.190 4.280 ;
+        RECT 71.030 0.350 77.090 4.280 ;
+        RECT 77.930 0.350 83.990 4.280 ;
+        RECT 84.830 0.350 90.890 4.280 ;
+        RECT 91.730 0.350 97.790 4.280 ;
+        RECT 98.630 0.350 104.690 4.280 ;
+        RECT 105.530 0.350 111.590 4.280 ;
+        RECT 112.430 0.350 118.490 4.280 ;
+        RECT 119.330 0.350 125.390 4.280 ;
+        RECT 126.230 0.350 132.290 4.280 ;
+        RECT 133.130 0.350 139.190 4.280 ;
+        RECT 140.030 0.350 146.090 4.280 ;
+        RECT 146.930 0.350 152.990 4.280 ;
+        RECT 153.830 0.350 159.890 4.280 ;
+        RECT 160.730 0.350 166.790 4.280 ;
+        RECT 167.630 0.350 173.690 4.280 ;
+        RECT 174.530 0.350 180.590 4.280 ;
+        RECT 181.430 0.350 187.490 4.280 ;
+        RECT 188.330 0.350 194.390 4.280 ;
+        RECT 195.230 0.350 201.290 4.280 ;
+        RECT 202.130 0.350 208.190 4.280 ;
+        RECT 209.030 0.350 215.090 4.280 ;
+        RECT 215.930 0.350 221.990 4.280 ;
+        RECT 222.830 0.350 228.890 4.280 ;
+        RECT 229.730 0.350 235.790 4.280 ;
+        RECT 236.630 0.350 242.690 4.280 ;
+        RECT 243.530 0.350 249.590 4.280 ;
+        RECT 250.430 0.350 256.490 4.280 ;
+        RECT 257.330 0.350 263.390 4.280 ;
+        RECT 264.230 0.350 270.290 4.280 ;
+        RECT 271.130 0.350 277.190 4.280 ;
+        RECT 278.030 0.350 284.090 4.280 ;
+        RECT 284.930 0.350 290.990 4.280 ;
+        RECT 291.830 0.350 297.890 4.280 ;
+        RECT 298.730 0.350 304.790 4.280 ;
+        RECT 305.630 0.350 311.690 4.280 ;
+        RECT 312.530 0.350 318.590 4.280 ;
+        RECT 319.430 0.350 325.490 4.280 ;
+        RECT 326.330 0.350 332.390 4.280 ;
+        RECT 333.230 0.350 339.290 4.280 ;
+        RECT 340.130 0.350 346.190 4.280 ;
+        RECT 347.030 0.350 353.090 4.280 ;
+        RECT 353.930 0.350 359.990 4.280 ;
+        RECT 360.830 0.350 366.890 4.280 ;
+        RECT 367.730 0.350 373.790 4.280 ;
+        RECT 374.630 0.350 380.690 4.280 ;
+        RECT 381.530 0.350 387.590 4.280 ;
+        RECT 388.430 0.350 394.490 4.280 ;
+        RECT 395.330 0.350 401.390 4.280 ;
+        RECT 402.230 0.350 408.290 4.280 ;
+        RECT 409.130 0.350 415.190 4.280 ;
+        RECT 416.030 0.350 422.090 4.280 ;
+        RECT 422.930 0.350 428.990 4.280 ;
+        RECT 429.830 0.350 435.890 4.280 ;
+        RECT 436.730 0.350 442.790 4.280 ;
+        RECT 443.630 0.350 449.690 4.280 ;
+        RECT 450.530 0.350 456.590 4.280 ;
+        RECT 457.430 0.350 463.490 4.280 ;
+        RECT 464.330 0.350 470.390 4.280 ;
+        RECT 471.230 0.350 477.290 4.280 ;
+        RECT 478.130 0.350 484.190 4.280 ;
+        RECT 485.030 0.350 490.720 4.280 ;
       LAYER met3 ;
-        RECT 21.050 533.480 546.000 538.725 ;
-        RECT 21.050 532.080 545.600 533.480 ;
-        RECT 21.050 517.840 546.000 532.080 ;
-        RECT 21.050 516.440 545.600 517.840 ;
-        RECT 21.050 502.200 546.000 516.440 ;
-        RECT 21.050 500.800 545.600 502.200 ;
-        RECT 21.050 486.560 546.000 500.800 ;
-        RECT 21.050 485.160 545.600 486.560 ;
-        RECT 21.050 470.920 546.000 485.160 ;
-        RECT 21.050 469.520 545.600 470.920 ;
-        RECT 21.050 455.280 546.000 469.520 ;
-        RECT 21.050 453.880 545.600 455.280 ;
-        RECT 21.050 439.640 546.000 453.880 ;
-        RECT 21.050 438.240 545.600 439.640 ;
-        RECT 21.050 424.000 546.000 438.240 ;
-        RECT 21.050 422.600 545.600 424.000 ;
-        RECT 21.050 408.360 546.000 422.600 ;
-        RECT 21.050 406.960 545.600 408.360 ;
-        RECT 21.050 392.720 546.000 406.960 ;
-        RECT 21.050 391.320 545.600 392.720 ;
-        RECT 21.050 377.080 546.000 391.320 ;
-        RECT 21.050 375.680 545.600 377.080 ;
-        RECT 21.050 361.440 546.000 375.680 ;
-        RECT 21.050 360.040 545.600 361.440 ;
-        RECT 21.050 345.800 546.000 360.040 ;
-        RECT 21.050 344.400 545.600 345.800 ;
-        RECT 21.050 330.160 546.000 344.400 ;
-        RECT 21.050 328.760 545.600 330.160 ;
-        RECT 21.050 314.520 546.000 328.760 ;
-        RECT 21.050 313.120 545.600 314.520 ;
-        RECT 21.050 298.880 546.000 313.120 ;
-        RECT 21.050 297.480 545.600 298.880 ;
-        RECT 21.050 283.240 546.000 297.480 ;
-        RECT 21.050 281.840 545.600 283.240 ;
-        RECT 21.050 267.600 546.000 281.840 ;
-        RECT 21.050 266.200 545.600 267.600 ;
-        RECT 21.050 251.960 546.000 266.200 ;
-        RECT 21.050 250.560 545.600 251.960 ;
-        RECT 21.050 236.320 546.000 250.560 ;
-        RECT 21.050 234.920 545.600 236.320 ;
-        RECT 21.050 220.680 546.000 234.920 ;
-        RECT 21.050 219.280 545.600 220.680 ;
-        RECT 21.050 205.040 546.000 219.280 ;
-        RECT 21.050 203.640 545.600 205.040 ;
-        RECT 21.050 189.400 546.000 203.640 ;
-        RECT 21.050 188.000 545.600 189.400 ;
-        RECT 21.050 173.760 546.000 188.000 ;
-        RECT 21.050 172.360 545.600 173.760 ;
-        RECT 21.050 158.120 546.000 172.360 ;
-        RECT 21.050 156.720 545.600 158.120 ;
-        RECT 21.050 142.480 546.000 156.720 ;
-        RECT 21.050 141.080 545.600 142.480 ;
-        RECT 21.050 126.840 546.000 141.080 ;
-        RECT 21.050 125.440 545.600 126.840 ;
-        RECT 21.050 111.200 546.000 125.440 ;
-        RECT 21.050 109.800 545.600 111.200 ;
-        RECT 21.050 95.560 546.000 109.800 ;
-        RECT 21.050 94.160 545.600 95.560 ;
-        RECT 21.050 79.920 546.000 94.160 ;
-        RECT 21.050 78.520 545.600 79.920 ;
-        RECT 21.050 64.280 546.000 78.520 ;
-        RECT 21.050 62.880 545.600 64.280 ;
-        RECT 21.050 48.640 546.000 62.880 ;
-        RECT 21.050 47.240 545.600 48.640 ;
-        RECT 21.050 33.000 546.000 47.240 ;
-        RECT 21.050 31.600 545.600 33.000 ;
-        RECT 21.050 17.360 546.000 31.600 ;
-        RECT 21.050 15.960 545.600 17.360 ;
-        RECT 21.050 9.695 546.000 15.960 ;
+        RECT 4.000 485.880 490.295 487.045 ;
+        RECT 4.400 484.480 490.295 485.880 ;
+        RECT 4.000 471.600 490.295 484.480 ;
+        RECT 4.400 470.200 490.295 471.600 ;
+        RECT 4.000 457.320 490.295 470.200 ;
+        RECT 4.400 455.920 490.295 457.320 ;
+        RECT 4.000 443.040 490.295 455.920 ;
+        RECT 4.400 441.640 490.295 443.040 ;
+        RECT 4.000 428.760 490.295 441.640 ;
+        RECT 4.400 427.360 490.295 428.760 ;
+        RECT 4.000 414.480 490.295 427.360 ;
+        RECT 4.400 413.080 490.295 414.480 ;
+        RECT 4.000 400.200 490.295 413.080 ;
+        RECT 4.400 398.800 490.295 400.200 ;
+        RECT 4.000 385.920 490.295 398.800 ;
+        RECT 4.400 384.520 490.295 385.920 ;
+        RECT 4.000 371.640 490.295 384.520 ;
+        RECT 4.400 370.240 490.295 371.640 ;
+        RECT 4.000 357.360 490.295 370.240 ;
+        RECT 4.400 355.960 490.295 357.360 ;
+        RECT 4.000 343.080 490.295 355.960 ;
+        RECT 4.400 341.680 490.295 343.080 ;
+        RECT 4.000 328.800 490.295 341.680 ;
+        RECT 4.400 327.400 490.295 328.800 ;
+        RECT 4.000 314.520 490.295 327.400 ;
+        RECT 4.400 313.120 490.295 314.520 ;
+        RECT 4.000 300.240 490.295 313.120 ;
+        RECT 4.400 298.840 490.295 300.240 ;
+        RECT 4.000 285.960 490.295 298.840 ;
+        RECT 4.400 284.560 490.295 285.960 ;
+        RECT 4.000 271.680 490.295 284.560 ;
+        RECT 4.400 270.280 490.295 271.680 ;
+        RECT 4.000 257.400 490.295 270.280 ;
+        RECT 4.400 256.000 490.295 257.400 ;
+        RECT 4.000 243.120 490.295 256.000 ;
+        RECT 4.400 241.720 490.295 243.120 ;
+        RECT 4.000 228.840 490.295 241.720 ;
+        RECT 4.400 227.440 490.295 228.840 ;
+        RECT 4.000 214.560 490.295 227.440 ;
+        RECT 4.400 213.160 490.295 214.560 ;
+        RECT 4.000 200.280 490.295 213.160 ;
+        RECT 4.400 198.880 490.295 200.280 ;
+        RECT 4.000 186.000 490.295 198.880 ;
+        RECT 4.400 184.600 490.295 186.000 ;
+        RECT 4.000 171.720 490.295 184.600 ;
+        RECT 4.400 170.320 490.295 171.720 ;
+        RECT 4.000 157.440 490.295 170.320 ;
+        RECT 4.400 156.040 490.295 157.440 ;
+        RECT 4.000 143.160 490.295 156.040 ;
+        RECT 4.400 141.760 490.295 143.160 ;
+        RECT 4.000 128.880 490.295 141.760 ;
+        RECT 4.400 127.480 490.295 128.880 ;
+        RECT 4.000 114.600 490.295 127.480 ;
+        RECT 4.400 113.200 490.295 114.600 ;
+        RECT 4.000 100.320 490.295 113.200 ;
+        RECT 4.400 98.920 490.295 100.320 ;
+        RECT 4.000 86.040 490.295 98.920 ;
+        RECT 4.400 84.640 490.295 86.040 ;
+        RECT 4.000 71.760 490.295 84.640 ;
+        RECT 4.400 70.360 490.295 71.760 ;
+        RECT 4.000 57.480 490.295 70.360 ;
+        RECT 4.400 56.080 490.295 57.480 ;
+        RECT 4.000 43.200 490.295 56.080 ;
+        RECT 4.400 41.800 490.295 43.200 ;
+        RECT 4.000 28.920 490.295 41.800 ;
+        RECT 4.400 27.520 490.295 28.920 ;
+        RECT 4.000 14.640 490.295 27.520 ;
+        RECT 4.400 13.240 490.295 14.640 ;
+        RECT 4.000 8.335 490.295 13.240 ;
       LAYER met4 ;
-        RECT 111.615 16.495 174.240 531.585 ;
-        RECT 176.640 16.495 251.040 531.585 ;
-        RECT 253.440 16.495 327.840 531.585 ;
-        RECT 330.240 16.495 404.640 531.585 ;
-        RECT 407.040 16.495 481.440 531.585 ;
-        RECT 483.840 16.495 520.425 531.585 ;
+        RECT 68.375 11.735 97.440 484.665 ;
+        RECT 99.840 11.735 174.240 484.665 ;
+        RECT 176.640 11.735 251.040 484.665 ;
+        RECT 253.440 11.735 327.840 484.665 ;
+        RECT 330.240 11.735 404.640 484.665 ;
+        RECT 407.040 11.735 481.440 484.665 ;
+        RECT 483.840 11.735 489.145 484.665 ;
   END
 END wb_buttons_leds
 END LIBRARY

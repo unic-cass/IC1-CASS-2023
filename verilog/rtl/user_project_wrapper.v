@@ -145,7 +145,7 @@ wb_buttons_leds wb_buttons_leds(
     // wb interface
     .i_wb_cyc(wbs_cyc_i),       // wishbone transaction
     .i_wb_stb(wbs_stb_i),       // strobe - data valid and accepted as long as !o_wb_stall
-    .i_wb_we(wbs_we_i),        // write enable
+    .i_wb_we(wbs_we_i),         // write enable
     .i_wb_addr(wbs_adr_i),      // address
     .i_wb_data(wbs_dat_i),      // incoming data
     .o_wb_ack(wbs_ack_o),       // request is completed 

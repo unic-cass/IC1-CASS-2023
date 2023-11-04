@@ -6,7 +6,7 @@
     ],
     "ROUTING_CORES": 8,
     "KLAYOUT_XOR_THREADS": 8,
-    "CLOCK_PERIOD": 35,
+    "CLOCK_PERIOD": 45,
     "CLOCK_PORT": "wb_clk_i",
     "FP_PDN_MACRO_HOOKS": "egd_top_wrapper vccd1 vssd1 vccd1 vssd1, R4_butter vccd1 vssd1 vccd1 vssd1, wb_buttons_leds vccd1 vssd1 vccd1 vssd1",
     "MACRO_PLACEMENT_CFG": "dir::macro.cfg",
@@ -38,7 +38,7 @@
     "PL_RESIZER_TIMING_OPTIMIZATIONS": 0,
     "GLB_RESIZER_DESIGN_OPTIMIZATIONS": 0,
     "GLB_RESIZER_TIMING_OPTIMIZATIONS": 0,
-    "MAX_TRANSITION_CONSTRAINT": 1.0,
+    "MAX_TRANSITION_CONSTRAINT": 1.5,
     "FP_PDN_ENABLE_RAILS": 0,
     "DIODE_INSERTION_STRATEGY": 0,
     "RUN_FILL_INSERTION": 0,
@@ -89,20 +89,20 @@
         "DIE_AREA": "0 0 2920 3520",
         "FP_DEF_TEMPLATE": "dir::fixed_dont_change/user_project_wrapper.def",
         "scl::sky130_fd_sc_hd": {
-            "CLOCK_PERIOD": 35
+            "CLOCK_PERIOD": 50
         },
         "scl::sky130_fd_sc_hdll": {
-            "CLOCK_PERIOD": 10
+            "CLOCK_PERIOD": 35
         },
         "scl::sky130_fd_sc_hs": {
-            "CLOCK_PERIOD": 8
+            "CLOCK_PERIOD": 30
         },
         "scl::sky130_fd_sc_ls": {
-            "CLOCK_PERIOD": 10,
+            "CLOCK_PERIOD": 35,
             "SYNTH_MAX_FANOUT": 5
         },
         "scl::sky130_fd_sc_ms": {
-            "CLOCK_PERIOD": 10
+            "CLOCK_PERIOD": 35
         }
     },
     "pdk::gf180mcuC": {

@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1699017506
+timestamp 1699127393
 << obsli1 >>
 rect 1104 2159 98808 97393
 << obsm1 >>
@@ -596,7 +596,7 @@ string FIXED_BBOX 0 0 100000 100000
 string LEFclass BLOCK
 string LEFview TRUE
 string GDS_END 26653208
-string GDS_FILE /home/rodrigowue/IC1-CASS-2023/openlane/wb_buttons_leds/runs/23_11_03_10_10/results/signoff/wb_buttons_leds.magic.gds
+string GDS_FILE /home/rodrigowue/test/IC1-CASS-2023/openlane/wb_buttons_leds/runs/23_11_04_16_42/results/signoff/wb_buttons_leds.magic.gds
 string GDS_START 1162660
 << end >>
 

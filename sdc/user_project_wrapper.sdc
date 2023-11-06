@@ -1,12 +1,12 @@
 ###############################################################################
 # Created by write_sdc
-# Fri Nov  3 16:51:28 2023
+# Sat Nov  4 19:59:28 2023
 ###############################################################################
 current_design user_project_wrapper
 ###############################################################################
 # Timing Constraints
 ###############################################################################
-create_clock -name clk -period 35.0000 [get_ports {wb_clk_i}]
+create_clock -name clk -period 50.0000 [get_ports {wb_clk_i}]
 set_clock_transition 0.1500 [get_clocks {clk}]
 set_clock_uncertainty 0.2500 clk
 set_clock_latency -source -min 4.5000 [get_clocks {clk}]
